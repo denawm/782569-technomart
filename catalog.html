@@ -62,29 +62,77 @@
         <div class="catalog-header">
           <h2 class="title catalog">Перфораторы</h2>
         </div>
-        <div class="left-catalog-column">
-          <h3 class="visually-hidden">Фильтр товаров</h3>
-          <div class="block filter">
-            <p class="catalog-text">
-              Фильтр:
-            </p>
-          </div>
-          <h3 class="catalog-title">Цена:</h3>
-          <div class="range-filter">
-            <div class="range">
-            <input type="range" min="0" max="30000" step="1" value=""> 
+        <div class="filters">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+            <h3 class="visually-hidden">Фильтр товаров</h3>
+            <div class="block filter">
+              <p class="catalog-text">
+                Фильтр:
+              </p>
             </div>
-            <div class="catalog-price-controls">
-              <input class="catalog-min-price" type="text" value="0">
-              <span class="catalog-sign">—</span>
-              <input class="catalog-max-price" type="text" value="30 000">
-            </div>
-          </div>
-          <h3 class="catalog-title">Производители:</h3>
-          <!--Здесь будет форма-->
-          <h3 class="catalog-title">Питание:</h3>
-          <!--Здесь будет форма-->
-          <button type="button" class="filter-btn">Показать</button>
+            
+            
+            
+            <fieldset class="filter filter-price">
+              <h3 class="catalog-title">Цена:</h3>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <input  id="flying" type="range" min="0" max="30000" step="1000" name="range"> 
+                </div>
+                <div class="catalog-price-controls">
+                  <label class="catalog-min-price" for="controls-min">
+                    <input id="controls-min" type="text" value="0">
+                  </label>
+                  <span class="catalog-sign">—</span>
+                  <label class="catalog-max-price" for="controls-max">
+                    <input id="controls-max" type="text" value="30 000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            
+            
+            
+            <fieldset>
+            <h3 class="catalog-title">Производители:</h3>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="Bosch" id="filter-bosch" checked>
+                  <label for="filter-bosch">Bosch</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="interscol" id="filter-interscol">
+                  <label for="filter-interscol">Интерскол</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
+                  <label for="filter-Makita">Makita</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="DeWalt" id="filter-DeWalt">
+                  <label for="filter-DeWalt">DeWalt</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
+                  <label for="filter-Hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h3 class="catalog-title">Питание:</h3>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-radio" type="radio" name="power-supply" id="filter-accum" checked>
+                  <label for="filter-accum">Аккумуляторные</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-radio" type="radio" name="power-supply" id="filter-network" checked>
+                  <label for="filter-network">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="filter-btn">Показать</button>
+          </form>
         </div>
         <div class="right-catalog-column">
           <div class="right-column-header">
@@ -296,8 +344,8 @@
         </div>
       </div>
     </footer>
-    <div class="modal-object modal-cart">
-      <a class="modal-close cart" href="catalog.html" aria-label="Закрыть окно с добавлением товара"></a>
+    <section class="modal-object modal-cart">
+      <a class="modal-close" href="catalog.html" aria-label="Закрыть окно с добавлением товара"></a>
       <div class="modal-content cart-content">
        <p class="cart-text">Товар добавлен в корзину!</p>
       </div>
@@ -305,6 +353,6 @@
         <button class="modal-btn cart-btn" type="submit">Оформить заказ</button>
         <a class="modal-btn close-btn" href="#">Продолжить покупки</a>
       </div>
-    </div>
+    </section>
   </body>
 </html>
