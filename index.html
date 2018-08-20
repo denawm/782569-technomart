@@ -8,13 +8,13 @@
     <header class="main-header">
       <div class="header-upper-panel">
         <a class="main-header-logo">Техномарт</a>
-        <!--
         <div class="header-upper-search">
-          <form>
-            <input type="search">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <input class="search-input" type="search" name="search" placeholder="Поиск:" id="search">
+            <button class="search-submit" type="submit">
+            </button>
           </form>
         </div>
-        -->
         <a class="header-bookmark" href="">Закладки: 0</a>
         <a class="header-basket" href="">Корзина: 0</a>
         <a class="header-order" href="">Оформить заказ</a>
@@ -337,5 +337,24 @@
         </div>
       </div>
     </footer>
+    <div class="modal-oject mail-form">
+      <a class="modal-close" href="#" aria-label="Закрыть форму отправки"></a>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма отправки">
+        <div class="modal-content">
+          <label class="modal-content" for="modal-username">Ваше имя:
+            <input class="modal-contact" id="modal-username" type="text" name="modal-name" placeholder="Имя Фамилия">
+          </label>
+          <label class="modal-content" for="modal-email">Ваш e-mail:
+            <input class="modal-contact" id="modal-email" type="text" name="modal-email" placeholder="email@xample.com">
+          </label>
+          <label class="modal-content" for="modal-text">Текст письма:
+            <textarea class="modal-contact textarea" id="modal-text" name="modal-text" rows="5" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-btn" type="sybmit">Отправить</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
