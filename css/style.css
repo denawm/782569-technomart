@@ -75,14 +75,29 @@ a {
 .search-input:focus{
    background-color: #212a3a;
 }
+
+.header-upper-panel a:active{ 
+  background-color: #161d29;
+  opacity: 0.5;
+}
+
 .main-navigation a:hover,
 .main-navigation a:focus{
   background-color: #293449;
+}
+.main-navigation a:active{
+   background-color: #1d2739;
+   opacity: 0.5;
 }
 
 .user-navigation a:hover,
 .user-navigation a:focus{
   color: #ee3643;
+}
+
+.user-navigation a:active{
+  color: #000000;
+  opacity: 0.3;
 }
 
 a.entered-user:hover,
@@ -110,9 +125,24 @@ a.entered-user:focus{
 }
 
 .offer-item{
+  text-align: center;
+  vertical-align: middle;
+  
   font-size: 14px;
   line-height: 18px;
   font-style: 400;
+  text-transform: uppercase;
+  
+  background-color:  #e5e5e5;
+}
+
+.offer-item:hover,
+.offer-item:focus{
+  background-color:  #cccccc;
+}
+
+.offer-item:active{
+  background-color:  #b2b2b2;
 }
 
 .slide h3{
@@ -128,7 +158,23 @@ a.entered-user:focus{
 }
 
 .popular-btn{
+  text-align: center;
+  vertical-align: middle;
+  
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-style: 400;
+  text-transform: uppercase;
+  
+  background-color:  #ee3643;
+}
+
+.popular-btn:hover,
+.popular-btn:focus{
+   background-color: #ca2c37;
+}
+
+.popular-btn:active{
+  background-color: #ba2732;
 }
