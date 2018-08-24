@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  
+  background-color:coral;  /*Временно*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #000000;
+  
+  background-color: #f3f7f9;
+}
+
+.user-navigation {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.header-lower-contacts{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.header-lower-contacts a{
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.main-navigation,
+.header-upper-panel{
+  background-color: #32425c;
+}
+
+.main-navigation ul,
+.slides-switches,
+.service-columns,
+.breadcrumbs,
+.filter-list,
+.footer-top-list,
+.footer-bottom-list{
+  list-style: none;
+}
+
+
+.header-upper-panel a,
+.main-navigation a,
+.container a{
+  color: #ffffff;
+}
+
+.user-navigation a{
+  color: #000000;
+}
+
+.header-upper-panel a:hover,
+.header-upper-panel a:focus,
+.search-input:hover,
+.search-input:focus{
+   background-color: #212a3a;
+  
+}
+.main-navigation a:hover,
+.main-navigation a:focus{
+  background-color: #293449;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus{
+  color: #ee3643;
+}
+a.entered-user:hover,
+a.entered-user:focus{
+  color:#000000;
+}
+
+.main-header h1{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
