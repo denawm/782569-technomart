@@ -74,7 +74,6 @@ a {
 .search-input:hover,
 .search-input:focus{
    background-color: #212a3a;
-  
 }
 .main-navigation a:hover,
 .main-navigation a:focus{
@@ -85,6 +84,7 @@ a {
 .user-navigation a:focus{
   color: #ee3643;
 }
+
 a.entered-user:hover,
 a.entered-user:focus{
   color:#000000;
@@ -96,5 +96,39 @@ a.entered-user:focus{
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
+  
+}
+.offers{
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
 }
 
+.offer-type{
+  font-size: 24px;
+  line-height: 30px;
+  font-style: 700;
+}
+
+.offer-item{
+  font-size: 14px;
+  line-height: 18px;
+  font-style: 400;
+}
+
+.slide h3{
+  font-size: 36px;
+  line-height: 36px;
+  font-style: 700;
+}
+
+.slide p{
+  font-size: 18px;
+  line-height: 24px;
+  font-style: 400;
+}
+
+.popular-btn{
+  font-size: 14px;
+  line-height: 18px;
+  font-style: 400;
+}
