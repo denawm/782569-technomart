@@ -57,7 +57,7 @@
     </header>
     <main class="catalog-container">
       <ul class="breadcrumbs">
-        <li><a href="index.html">Домик</a></li>
+        <li><a href="index.html" aria-label="На главную"></a></li>
         <li><a href="">Каталог</a></li>
         <li><a href="">Инструмент</a></li>
         <li class="breadcrumbs-current">Перфораторы</li>
@@ -75,7 +75,7 @@
               </p>
             </div>
             <fieldset class="filter filter-price">
-              <h3 class="catalog-title">Цена:</h3>
+              <legend>Цена:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <input  id="flying" type="range" min="0" max="30000" step="1000" name="range"> 
@@ -92,39 +92,39 @@
               </div>
             </fieldset>
             <fieldset>
-            <h3 class="catalog-title">Производители:</h3>
+            <legend>Производители:</legend>
               <ul class="filter-list">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="Bosch" id="filter-bosch" checked>
+                  <input class="filter-input filter-checkbox" type="checkbox" name="Bosch" id="filter-bosch" checked>
                   <label for="filter-bosch">Bosch</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="interscol" id="filter-interscol">
+                  <input class="filter-input filter-checkbox" type="checkbox" name="interscol" id="filter-interscol">
                   <label for="filter-interscol">Интерскол</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
+                  <input class="filter-input filter-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
                   <label for="filter-Makita">Makita</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="DeWalt" id="filter-DeWalt">
+                  <input class="filter-input filter-checkbox" type="checkbox" name="DeWalt" id="filter-DeWalt">
                   <label for="filter-DeWalt">DeWalt</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
+                  <input class="filter-input filter-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
                   <label for="filter-Hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <h3 class="catalog-title">Питание:</h3>
+              <legend>Питание:</legend>
               <ul class="filter-list">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-radio" type="radio" name="power-supply" id="filter-accum" checked>
+                  <input class="filter-input filter-radio" type="radio" name="power-supply" id="filter-accum" checked>
                   <label for="filter-accum">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-radio" type="radio" name="power-supply" id="filter-network" checked>
+                  <input class="filter-input filter-radio" type="radio" name="power-supply" id="filter-network" checked>
                   <label for="filter-network">Сетевые</label>
                 </li>
               </ul>
@@ -281,10 +281,10 @@
         </div>
         
         <ul class="pagination">
-          <li class="pagination-btn current" type="button"><a>1</a></li>
-          <li class="pagination-btn" type="button"><a href="">2</a></li>
-          <li class="pagination-btn" type="button"><a href="">3</a></li>
-          <li class="pagination-btn next" type="button"><a href="">Следующая</a></li>
+          <li class="pagination-btn current"><a>1</a></li>
+          <li class="pagination-btn"><a href="">2</a></li>
+          <li class="pagination-btn"><a href="">3</a></li>
+          <li class="pagination-btn"><a href="">Следующая</a></li>
         </ul>
       </section>
       <section class="perforators">
@@ -342,12 +342,12 @@
     </footer>
     <section class="modal-object modal-cart">
       <a class="modal-close" href="catalog.html" aria-label="Закрыть окно с добавлением товара"></a>
-      <div class="modal-content cart-content">
+      <div class="modal cart-content">
        <p class="cart-text">Товар добавлен в корзину!</p>
       </div>
       <div class="modal-footer">
-        <button class="modal-btn cart-btn" type="submit">Оформить заказ</button>
-        <a class="modal-btn close-btn" href="#">Продолжить покупки</a>
+        <button class="popular-btn cart-btn" type="submit">Оформить заказ</button>
+        <a class="popular-btn next" href="#">Продолжить покупки</a>
       </div>
     </section>
   </body>

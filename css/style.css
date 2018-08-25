@@ -70,7 +70,8 @@ a {
 .breadcrumbs,
 .filter-list,
 .footer-top-list,
-.footer-bottom-list{
+.footer-bottom-list,
+.pagination {
   list-style: none;
 }
 
@@ -150,7 +151,7 @@ a.logo:active{
 .offer-type{
   font-size: 24px;
   line-height: 30px;
-  font-style: 700;
+  font-weight: bold;
 }
 
 .offer-item{
@@ -176,7 +177,7 @@ a.logo:active{
 .slide h3{
   font-size: 36px;
   line-height: 36px;
-  font-style: 700;
+  font-weight: bold;
 }
 
 .slide p{
@@ -223,13 +224,13 @@ a.logo:active{
 .catalog-product h3{
   font-size: 18px;
   line-height: 20px;
-  font-style: 700;
+  font-weight: bold;
 }
 
 .catalog-product p{
   font-size: 17px;
   line-height: 18px;
-  font-style: 700;
+  font-weight: bold;
 }
 
 .product-price{
@@ -297,7 +298,7 @@ a.logo:active{
 /*  ПРОИЗВОДИТЕЛИ */
 .catalog-manufacturers img{
   border: 1px solid #e7e7e7;
-  background-size: 100%;
+  
 }
 .catalog-manufacturers img:hover,
 .catalog-manufacturers img:focus{
@@ -329,7 +330,8 @@ a.logo:active{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
-  font-style: 700;
+  font-weight: bold;
+  
 }
 
 .service-columns button{
@@ -490,4 +492,225 @@ a.logo:active{
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+
+/* СТИЛИЗАЦИЯ КАТАЛОГА */
+
+.breadcrumbs{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+  
+
+.breadcrumbs a{
+  color: #000000;
+}
+
+.catalog-product{
+/*  background-color:;*/
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-product:hover {
+  box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+/* ПАГИНАЦИЯ*/
+
+.pagination-btn a{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  
+  color: #000000;
+  background-color: #ffffff;
+  
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-btn a:hover,
+.pagination-btn a:focus{
+  border: 1px solid #bdc6ca;
+  
+}
+
+.pagination-btn a:active{
+  border: 1px solid #ee3643;
+}
+
+.current a{
+  border: 1px solid #ee3643;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.current a:hover,
+.current a:focus{
+  border: 1px solid #ee3643;
+}
+
+/* ЗАГОЛОВОК КАТАЛОГА*/
+.catalog-header h2{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  
+  color: #32425c;
+}
+
+.catalog-header{
+  background-color: #f2f6f8;
+}
+
+/* ФОРМА */
+.filter{
+  font-size: 13px;
+}
+
+.block{
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  
+  background-color: #f7f3ec;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+
+.filter ul{
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-input:hover,
+.filter-input:focus {
+  
+}
+
+.filter-input:active + label{
+  opacity: 0.4;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.filter-btn{
+  font: inherit;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+ 
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+
+.right-column-header{
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  
+  background-color: #f7f3ec;
+}
+
+.right-column-header a{
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  
+  border-bottom: 1px dashed #ee3643;
+}
+
+.right-column-header a:hover,
+.right-column-header a:focus{
+  border-bottom: 1px solid #ee3643;
+  color: #000000;
+}
+
+.right-column-header a:active{
+  color: #ee3643;
+}
+
+a.catalog-option-up,
+a.catalog-option-down{
+  border:none;
+}
+
+a.catalog-option-up:hover,
+a.catalog-option-down:hover,
+a.catalog-option-up:focus,
+a.catalog-option-down:focus{
+  border:none;
+}
+
+/* БЛОК "О перфораторах"*/
+.perforators{
+  background-color: #f4f8f9;
+}
+
+.perforators h2{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+
+/* МОДАЛКА С КОРЗИНОЙ */
+.modal-footer{
+  font-family: "Cuprum", Arial, sans-serif;
+ 
+}
+.cart-content{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  
+  color: #000000;
+}
+
+.cart-btn{
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  
+  color: #ffffff;
+  border: none;
+}
+
+.next{
+  color: #000000;
+
+  background-color:  #ffffff
+}
+
+.next:hover,
+.next:focus{
+  background-color: aliceblue;
 }
