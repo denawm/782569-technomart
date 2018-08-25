@@ -143,11 +143,38 @@ a.logo:active{
 }
 
 /*  СЛАЙДЕРЫ И КНОПКИ   */
+
+.material{
+  background-color: #ffbf47;
+}
+.tool{
+  background-color: #3bbce3;
+}
+.equipment{
+  background-color: #dc91d8;
+}
+
+.discount{
+  background-color: #8ed78f;
+}
+
+.delivery{
+  background-color: #ffc047;
+}
+
 .offers{
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 }
 
+.perforators{
+  background-image: url(../img/slider-1.jpg);
+  background-repeat: no-repeat
+}
+.drills{
+  background-image: url(../img/slider-2.jpg);
+  background-repeat: no-repeat
+}
 .offer-type{
   font-size: 24px;
   line-height: 30px;
