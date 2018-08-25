@@ -15,6 +15,22 @@ a {
   text-decoration: none;
 }
 
+/*  ШАПКА САЙТА  */
+
+.main-header-logo{
+  text-align: center;
+  vertical-align: middle;
+  
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  background-color:  #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
 .main-header {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
@@ -81,6 +97,8 @@ a {
   opacity: 0.5;
 }
 
+
+
 .main-navigation a:hover,
 .main-navigation a:focus{
   background-color: #293449;
@@ -113,6 +131,17 @@ a.entered-user:focus{
   color: #ee3643;
   
 }
+
+a.logo:hover,
+a.logo:focus{
+  background-color: #ca2c37;
+}
+
+a.logo:active{
+  background-color: #ba2732
+}
+
+/*  СЛАЙДЕРЫ И КНОПКИ   */
 .offers{
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
@@ -130,7 +159,6 @@ a.entered-user:focus{
   
   font-size: 14px;
   line-height: 18px;
-  font-style: 400;
   text-transform: uppercase;
   
   background-color:  #e5e5e5;
@@ -154,9 +182,13 @@ a.entered-user:focus{
 .slide p{
   font-size: 18px;
   line-height: 24px;
-  font-style: 400;
 }
 
+
+/*  ПОПУЛЯРНЫЕ КНОПКИ И ЗАГОЛОВКИ  */
+.popular-header{
+  background-color: #faf6f2;
+}
 .popular-btn{
   text-align: center;
   vertical-align: middle;
@@ -164,8 +196,8 @@ a.entered-user:focus{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-style: 400;
   text-transform: uppercase;
+  color: #ffffff;
   
   background-color:  #ee3643;
 }
@@ -177,4 +209,285 @@ a.entered-user:focus{
 
 .popular-btn:active{
   background-color: #ba2732;
+}
+
+.popular-header h2{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+/*  КАРТОЧКИ ПЕРФОРАТОРОВ  */
+.catalog-product h3{
+  font-size: 18px;
+  line-height: 20px;
+  font-style: 700;
+}
+
+.catalog-product p{
+  font-size: 17px;
+  line-height: 18px;
+  font-style: 700;
+}
+
+.product-price{
+  color: #999999;
+  text-decoration:line-through;
+}
+
+.product-discount{
+  background-color #ee3643; 
+  color: #ffffff;
+}
+
+.product-btn .product-buy{
+  color: #ffffff;
+}
+
+.product-btn .product-bookmark{
+  color: #32425c;
+}
+
+.product-buy{
+  text-align: center;
+  vertical-align: middle;
+  
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  background-color:  #63a63e;
+  border-bottom: 3px solid #518534;
+}
+
+.product-buy:hover,
+.product-buy:focus{
+  background-color:  #5fbb2d;
+}
+
+.product-buy:active{
+  background-color:  #518534;
+}
+
+.product-bookmark {
+  text-align: center;
+  vertical-align: middle;
+  
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+}
+
+.product-bookmark:hover,
+.product-bookmark:focus{
+  border: 3px solid #32425c;
+}
+
+.product-bookmark:active{
+  opacity: 0.3;
+}
+
+/*  ПРОИЗВОДИТЕЛИ */
+.catalog-manufacturers img{
+  border: 1px solid #e7e7e7;
+  background-size: 100%;
+}
+.catalog-manufacturers img:hover,
+.catalog-manufacturers img:focus{
+  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+.catalog-manufacturers img:active{
+  opacity: 0.3;
+  box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+  }
+
+
+/*  БЛОК СЕРВИСЫ  */
+.service{
+  background-color: #f4f8f9;
+}
+.service h2{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.service p{
+  color: #000000;
+}
+
+.service-columns{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-style: 700;
+}
+
+.service-columns button{
+  text-align: center;
+  vertical-align: middle;
+  font: inherit;
+  color: #ffffff;
+  border: none;
+  background-color: #32425c;
+  
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+}
+
+.service-columns button:hover,
+.service-columns button:focus{
+   background-color: #293449;
+}
+
+.service-columns button:active{
+  color: #32425c;
+  background-color: #ffffff;
+  border: none;
+}
+
+.service-details-title{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
+
+/*  БЛОК КОМПАНИЯ  */
+.company{
+  background-color: #ffffff;
+}
+.company-title{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.company-info ul {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  
+}
+
+/*  ФУТЕР ВЕРХНЯЯ ЧАСТЬ*/
+.footer-upper-panel{
+  background-color: #303f58;
+}
+
+.main-footer-logo {
+  text-align: center;
+  vertical-align: middle;
+  
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  background-color:  #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+.footer-upper-panel p{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-top-list a{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  
+  color: #f3f7f9;
+}
+
+.footer-bottom-list a{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  
+  color: #ffd180;
+}
+
+/*  ФУТЕР НИЖНЯЯ ЧАСТЬ*/
+
+.footer-bottom-panel {
+   background-color: #2a354a;
+}
+
+.footer-bottom-panel p{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-bottom-panel a{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  
+  color: #ffd180;
+}
+
+/*  МОДАЛКА С ФОРМОЙ */
+
+.modal{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+  
+  border-top: 7px solid #ff5357;
+  background-color: #ffffff; 
+}
+.modal-content{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+.modal input{
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #e9eced;
+}
+.modal-footer{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  background-color: #f4f4f4; 
+}
+
+.modal-btn{
+  text-align: center;
+  vertical-align: middle;
+  font: inherit;
+  color: #ffffff;
+  border: none;
+}
+
+
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
