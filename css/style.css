@@ -195,16 +195,16 @@ a.logo:active{
   line-height: 18px;
   text-transform: uppercase;
   
-  background-color:  #e5e5e5;
+  background-color:  rgba(0, 0, 0, 0.1);
 }
 
 .offer-item:hover,
 .offer-item:focus{
-  background-color:  #cccccc;
+  background-color:  rgba(0, 0, 0, 0.2);;
 }
 
 .offer-item:active{
-  background-color:  #b2b2b2;
+  background-color:  rgba(0, 0, 0, 0.3);;
 }
 
 .slide h3{
