@@ -171,7 +171,7 @@ a.logo:active{
   color: #ffffff;
 }
 
-.perforators{
+.perforator{
   background-image: url(../img/slider-1.jpg);
   background-repeat: no-repeat
 }
@@ -272,7 +272,7 @@ a.logo:active{
 }
 
 .product-discount{
-  background-color #ee3643; 
+  background-color: #ee3643; 
   color: #ffffff;
 }
 
