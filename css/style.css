@@ -18,8 +18,13 @@ a {
 /*  ШАПКА САЙТА  */
 
 .main-header-logo{
+  display: inline-block;
+  width: 220px;
+  height: 42px;
+  
   text-align: center;
   vertical-align: middle;
+  
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
@@ -32,6 +37,8 @@ a {
 }
 
 .main-header {
+  margin-bottom: 59px;
+  
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
@@ -143,7 +150,8 @@ a.logo:focus{
 }
 
 a.logo:active{
-  background-color: #ba2732
+  background-color: #ba2732;
+  opacity: 1;
 }
 
 /*  СЛАЙДЕРЫ И КНОПКИ   */
@@ -749,3 +757,5 @@ a.catalog-option-down:focus{
 .next:focus{
   background-color: aliceblue;
 }
+
+
