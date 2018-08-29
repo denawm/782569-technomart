@@ -522,21 +522,49 @@ a.entered-link{
 }
 
 /*  ПРОИЗВОДИТЕЛИ */
-.catalog-manufacturers img{
+
+.catalog-manufacturers{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.catalog-manufacturers a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 219px;
+  min-height: 144px;
+  margin-bottom: 20px;
+  
   border: 1px solid #e7e7e7;
   
 }
-.catalog-manufacturers img:hover,
-.catalog-manufacturers img:focus{
+.catalog-manufacturers img{
+  
+ 
+  
+}
+.catalog-manufacturers a:hover,
+.catalog-manufacturers a:focus{
   box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
-.catalog-manufacturers img:active{
+.catalog-manufacturers a:active{
   opacity: 0.3;
   box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
   }
 
 
 /*  БЛОК СЕРВИСЫ  */
+.service-warrianty,
+.service-credit{
+  display: none;
+}
+
+
 .service{
   background-color: #f4f8f9;
 }
