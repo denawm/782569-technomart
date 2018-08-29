@@ -433,6 +433,11 @@ a.entered-link{
 
 /*  КАРТОЧКИ ПЕРФОРАТОРОВ  */
 .catalog-product h3{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 160px;
+  
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -445,13 +450,23 @@ a.entered-link{
 }
 
 .product-price{
+  margin: 0;
+  padding: 0;
+  
   color: #999999;
   text-decoration:line-through;
 }
 
 .product-discount{
+  margin: 0;
+  padding: 0;
+  
   background-color: #ee3643; 
   color: #ffffff;
+}
+
+.product-btn{
+  display: none;
 }
 
 .product-btn .product-buy{
@@ -708,6 +723,16 @@ a.entered-link{
 
 /* СТИЛИЗАЦИЯ КАТАЛОГА */
 
+.catalog-list{
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 20px;
+}
+
+
+
+
 .breadcrumbs{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -721,9 +746,12 @@ a.entered-link{
 }
 
 .catalog-product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
-  width:220px;
-  height: 318px;
+  width:219px;
+  min-height: 319px;
   
   
   background-color: #ffffff;
