@@ -18,13 +18,12 @@ a {
 /*  ШАПКА САЙТА  */
 
 .main-header-logo{
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 220px;
-  height: 42px;
+  min-height: 42px;
   
-  text-align: center;
-  vertical-align: middle;
-  align-self: stretch;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
@@ -33,11 +32,10 @@ a {
   color: #ffffff;
   
   background-color:  #ee3643;
-  border-bottom: 5px solid #b52933;
+  box-shadow: 0 5px 0  #b52933
 }
 
 .main-header {
-  
   margin-bottom: 59px;
   
   font-family: "Cuprum", Arial, sans-serif;
@@ -55,8 +53,11 @@ a {
 }
 
 .header-lower-contacts{
+  width: 270px;
+  padding-right: 70px;
+  
   text-align: center;
-
+  
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -64,53 +65,45 @@ a {
   
 }
 
-.header-lower-contacts a{
-  
-  font-size: 21px;
-  line-height: 21px;
-  color: #ee3643;
-}
 
 .header-upper-panel{
   display: flex;
   width: 100%;
-  max-height: 42px;
+  min-height: 42px;
   margin-bottom: 46px;
-
   background-color: #32425c;
 }
 
 .header-upper-panel .container{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items:stretch;
+}
+
+.search-submit{
+  position: absolute;
 }
 
 .container {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  
 }
 
-/*
 .header-upper-panel a:not(:first-of-type){
-  width: 150px;
-  height: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
+  width: 150px;
 }
-*/
 
 .main-navigation{
   display: flex;
   width: 940px;
-  
   margin-bottom: 59px;
-   
   max-height: 55px;
-  border-bottom: 5px solid #293449; 
   
+  box-shadow: 0 5px #293449;
   background-color: #32425c;
 }
 
@@ -120,14 +113,12 @@ a {
 }
 
 .header-lower{
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 1px;
 }
 
 
 .header-lower-panel {
   display: flex;
-  margin: 0 auto;
   margin-bottom: 45px; 
 }
 
@@ -174,6 +165,16 @@ a {
   color: rgba(255, 255, 255, 0.6)
 }
 
+input.search-input{
+  display: flex;
+  justify-content: center;
+  min-height: 42px;
+  width: 270px;
+  border: none;
+  
+  background-color: #32425c;
+}
+
 a.header-order{
   background-color: #63a63e;
 }
@@ -214,10 +215,9 @@ a.entered-user:focus{
 }
 
 .main-header h1{
-  
-  width: 220px;
-  margin-right: 70px;
- 
+  padding-right: 53px;
+  padding-left: 50px;
+  width: 198px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
@@ -238,11 +238,20 @@ a.logo:active{
 }
 
 .header-lower-contacts a{
+  display: inline-block;
+  
+  padding: 11px;
+  padding-left: 70px;
+  padding-right: 47px;
+  font-size: 21px;
+  line-height: 21px;
   
   color: #ee3643;
-  padding: 10px 50px;
   border: 3px solid #ffffff;
+ 
+  margin-bottom: -5px;
 }
+
 a.entered-link{
   font-size: 16px;
   line-height: 18px;
