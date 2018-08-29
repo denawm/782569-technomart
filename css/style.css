@@ -266,9 +266,11 @@ a.entered-link{
 .material{
   background-color: #ffbf47;
 }
+
 .tool{
   background-color: #3bbce3;
 }
+
 .equipment{
   background-color: #dc91d8;
 }
@@ -282,16 +284,58 @@ a.entered-link{
 }
 
 .offers{
+  display: flex;
+  flex-wrap: wrap;
+  
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
+  
+  margin-bottom: 53px;
 }
 
-.perforator{
+.discout-delivery{
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  margin-left: 20px;
+}
+
+
+.offer{
+  width: 300px;
+  height: 123px;
+  
+  margin-bottom: 20px;
+}
+
+.material,
+.tool{
+  margin-right: 20px;
+}
+
+.drills{
+  width: 620px;
+  min-height: 266px;
+  
   background-image: url(../img/slider-1.jpg);
   background-repeat: no-repeat
 }
 
-.drills{
+.slides-switches {
+  position: absolute;
+  top:600px;
+}
+
+.offer-slider{
+  display: flex;
+}
+
+
+.perforator{
+  width: 620px;
+  min-height: 266px;
+  display: none;
+  
   background-image: url(../img/slider-2.jpg);
   background-repeat: no-repeat
 }
@@ -336,11 +380,26 @@ a.entered-link{
 
 /*  ПОПУЛЯРНЫЕ КНОПКИ И ЗАГОЛОВКИ  */
 .popular-header{
+  display: flex;
+  min-height: 90px;
+  align-items: center;
+  margin-bottom: 20px;
+  
   background-color: #faf6f2;
 }
+
 .popular-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 25px;
+  width: 253px;
+  height: 38px;
+  
+  border-radius: 3px;
   text-align: center;
-  vertical-align: middle;
+  
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -361,6 +420,8 @@ a.entered-link{
 }
 
 .popular-header h2{
+  padding-left: 25px;
+  
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -660,6 +721,11 @@ a.entered-link{
 }
 
 .catalog-product{
+  
+  width:220px;
+  height: 318px;
+  
+  
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
