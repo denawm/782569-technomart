@@ -522,13 +522,16 @@ a.entered-link{
 }
 
 /*  ПРОИЗВОДИТЕЛИ */
+.popular-manufacturers{
+  margin-bottom: 65px;
+}
 
 .catalog-manufacturers{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  
 }
 
 .catalog-manufacturers a{
@@ -543,11 +546,8 @@ a.entered-link{
   border: 1px solid #e7e7e7;
   
 }
-.catalog-manufacturers img{
-  
- 
-  
-}
+
+
 .catalog-manufacturers a:hover,
 .catalog-manufacturers a:focus{
   box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
@@ -566,9 +566,14 @@ a.entered-link{
 
 
 .service{
+  min-height: 522px;
+  
   background-color: #f4f8f9;
 }
+
 .service h2{
+  padding-top: 62px;
+  
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -576,11 +581,29 @@ a.entered-link{
   color: #000000;
 }
 
+
+
 .service p{
   color: #000000;
 }
 
+.service-text{
+  margin: 0;
+  margin-bottom: 48px;
+  width: 400px;
+}
+
+.service-items{
+  display: flex;
+  
+}
+
 .service-columns{
+  margin: 0;
+  margin-left: 0;
+  padding: 0;
+  
+  
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
@@ -589,8 +612,11 @@ a.entered-link{
 }
 
 .service-columns button{
-  text-align: center;
-  vertical-align: middle;
+  width: 240px;
+  min-height: 61px;
+  padding-left: 22px;
+  
+  text-align: left;
   font: inherit;
   color: #ffffff;
   border: none;
@@ -611,11 +637,52 @@ a.entered-link{
   border: none;
 }
 
+
+.service-details{
+  width: 100%;
+  margin-left: 79px;
+}
+
+.service-details div{
+  min-height: 300px;
+}
+
+.service-delivery p {
+  width: 280px;
+}
+
+.service-delivery{
+   background: url(../img/delivery.png) no-repeat 100% 30px;
+}
+
+
+.service-warrianty p{
+  width: 380px;
+}
+
+.service-details h3{
+  margin-bottom: 30px;
+  
+  text-transform: uppercase;
+}
+
+.company-btn{
+  margin-top: 30px;
+}
+
 .service-details-title{
+  margin: 0;
+  padding: 0;
+  
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
+}
+
+.service-details-text{
+  margin: 0;
+  padding: 0;
 }
 
 /*  БЛОК КОМПАНИЯ  */
