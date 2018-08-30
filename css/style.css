@@ -137,7 +137,8 @@ a {
 .filter-list,
 .footer-top-list,
 .footer-bottom-list,
-.pagination {
+.pagination,
+.company-list{
   list-style: none;
 }
 
@@ -330,6 +331,9 @@ a.entered-link{
   display: flex;
 }
 
+.offer-slider h3{
+  text-transform: uppercase;
+}
 
 .perforator{
   width: 620px;
@@ -425,6 +429,7 @@ a.entered-link{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   
   color: #32425c;
@@ -567,7 +572,8 @@ a.entered-link{
 
 .service{
   min-height: 522px;
-  
+  margin-bottom: 75px;
+    
   background-color: #f4f8f9;
 }
 
@@ -577,6 +583,7 @@ a.entered-link{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #000000;
 }
@@ -666,7 +673,7 @@ a.entered-link{
   text-transform: uppercase;
 }
 
-.company-btn{
+.service-btn{
   margin-top: 30px;
 }
 
@@ -677,6 +684,7 @@ a.entered-link{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: #32425c;
 }
 
@@ -686,21 +694,77 @@ a.entered-link{
 }
 
 /*  БЛОК КОМПАНИЯ  */
+
 .company{
   background-color: #ffffff;
 }
-.company-title{
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
+
+.company .container{
+  display: flex;
+  
 }
 
-.company-info ul {
+.company-info{
+  padding-right: 120px;
+}
+
+.company-list{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   
+}
+
+.company-list li{
+  padding-bottom: 25px;
+}
+
+.company-information {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  
+  width: 515px;
+}
+
+.company-btn{
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 85px;
+}
+
+.promo{
+  width: 400px;
+}
+.contacts{
+  width: 185px;
+}
+
+.company-title{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.company-contact-btn{
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  min-height: 38px;
+  margin-top: 48px;
+}
+.company-contact h4,
+.company-contact p{
+  padding-left: 5px;
 }
 
 /*  ФУТЕР ВЕРХНЯЯ ЧАСТЬ*/
