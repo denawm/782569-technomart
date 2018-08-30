@@ -851,12 +851,6 @@ a.entered-link{
   color: #f3f7f9;
 }
 
-
-
-
-
-
-
 .footer-bottom-list a{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -960,30 +954,31 @@ a.entered-link{
 
 /* СТИЛИЗАЦИЯ КАТАЛОГА */
 
+.catalog{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 .catalog-list{
   display: flex;
   justify-content: space-between;
   
-  margin-bottom: 20px;
 }
 
-
-
-
-.breadcrumbs{
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
+.catalog-list-items{
+  display: flex;
+  flex-wrap: wrap;
   
-
-.breadcrumbs a{
-  color: #000000;
+  margin-bottom: 25px;
 }
+
+
 
 .catalog-product{
+  margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   
@@ -993,19 +988,61 @@ a.entered-link{
   
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+  
 }
+
+.catalog-list-items .catalog-product{
+  margin-right: 20px;
+}
+
+.catalog-list-items .catalog-product:nth-of-type(3n){
+  margin-right: 0px;
+}
+
+.breadcrumbs{
+  position: absolute;
+  top: 360px;
+  
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+  
+
+.breadcrumbs a{
+  padding-right: 35px;
+  color: #000000;
+}
+
+
 
 .catalog-product:hover {
   box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 /* ПАГИНАЦИЯ*/
+.pagination{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+  margin-bottom: 30px;
+  
+}
 
 .pagination-btn a{
+  margin: 0;
+  padding: 0;
+  
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  
+  margin-right: 10px;
   color: #000000;
   background-color: #ffffff;
   
@@ -1035,30 +1072,71 @@ a.entered-link{
 
 /* ЗАГОЛОВОК КАТАЛОГА*/
 .catalog-header h2{
+  display: flex;
+  min-height: 89px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-left: 26px;
+  
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   
   color: #32425c;
+  
 }
 
 .catalog-header{
   background-color: #f2f6f8;
 }
 
-/* ФОРМА */
-.filter{
-  font-size: 13px;
+/* ФОРМА И КАРТОЧКИ*/
+
+.filters{
+  width: 220px;
+  margin-right: 44px;
+}
+.column-header{
+  display: flex;
+  margin-bottom: 20px;
+  height: 38px;
 }
 
-.block{
+.left-column-header {
+  display: flex;
+  height: 38px;
+  width: 200px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  margin-right: 20px;
+  
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
   
   background-color: #f7f3ec;
+}
+
+.right-column-header{
+  display: flex;
+  height: 38px;
+  width: 700px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.filter{
+  font-size: 13px;
 }
 
 .filter fieldset {
@@ -1154,7 +1232,17 @@ a.catalog-option-down:focus{
   background-color: #f4f8f9;
 }
 
+.perforators p{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 71px;
+}
+
 .perforators h2{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  padding-top: 65px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -1165,7 +1253,8 @@ a.catalog-option-down:focus{
 
 /* МОДАЛКА С КОРЗИНОЙ */
 .modal-oject,
-.modal-map{
+.modal-map,
+.modal-cart{
   display: none;
 }
 
@@ -1201,4 +1290,6 @@ a.catalog-option-down:focus{
   background-color: aliceblue;
 }
 
+/*div,section,a,ul,li,p,footer,header{
+  outline: 2px solid red;}*/
 
