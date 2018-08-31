@@ -98,18 +98,28 @@ a {
 }
 
 .main-navigation{
-  display: flex;
-  width: 940px;
   margin-bottom: 59px;
-  max-height: 55px;
   
   box-shadow: 0 5px #293449;
   background-color: #32425c;
 }
 
-
-.site-navigation {
+.site-navigation{
+  padding: 0px;
+  margin: 0;
   display: flex;
+  min-height: 55px;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.site-navigation a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 55px;
+  width:125px;
 }
 
 .header-lower{
@@ -1030,8 +1040,6 @@ a.entered-link{
   padding: 0px;
   margin: 0;
   display: flex;
-  
-  
   margin-bottom: 30px;
   
 }
