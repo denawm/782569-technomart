@@ -1027,17 +1027,26 @@ a.entered-link{
 
 /* ПАГИНАЦИЯ*/
 .pagination{
-  padding: 0;
+  padding: 0px;
   margin: 0;
   display: flex;
+  
   
   margin-bottom: 30px;
   
 }
 
+.next-btn a{
+  padding: 0 30px;
+}
+
 .pagination-btn a{
-  margin: 0;
-  padding: 0;
+  display: flex;
+  min-width: 37px;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  
   
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1045,8 +1054,10 @@ a.entered-link{
   margin-right: 10px;
   color: #000000;
   background-color: #ffffff;
+  text-transform: uppercase;
   
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 
 .pagination-btn a:hover,
