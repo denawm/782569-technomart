@@ -308,7 +308,7 @@ a.entered-link{
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
   
-  margin-bottom: 53px;
+  margin-bottom: 32px;
 }
 
 .discout-delivery{
@@ -562,7 +562,7 @@ a.entered-link{
   justify-content: center;
   
   width: 219px;
-  min-height: 144px;
+  min-height: 143px;
   margin-bottom: 20px;
   
   border: 1px solid #e7e7e7;
@@ -608,6 +608,7 @@ a.entered-link{
 
 
 .service p{
+  letter-spacing: 0.06px;
   color: #000000;
 }
 
@@ -1000,7 +1001,7 @@ a.entered-link{
   align-items: center;
   
   width:219px;
-  min-height: 319px;
+  min-height: 316px;
   
   
   background-color: #ffffff;
