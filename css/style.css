@@ -71,7 +71,7 @@ a {
 .header-upper-panel{
   display: flex;
   width: 100%;
-  min-height: 42px;
+  height: 41px;
   margin-bottom: 48px;
   background-color: #32425c;
 }
@@ -95,8 +95,19 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3px;
   
-  width: 150px;
+}
+.header-bookmark{
+  padding-left: 45px;
+  padding-right: 32px;
+  margin-left: auto;
+  
+}
+.header-basket{
+  padding-left: 45px;
+  padding-right: 31px;
+  
 }
 
 .main-navigation{
@@ -182,16 +193,19 @@ a {
 input.search-input{
   display: flex;
   justify-content: center;
-  min-height: 42px;
-  width: 270px;
+  min-height: 41px;
   border: none;
   
   background-color: #32425c;
 }
 
 a.header-order{
+  padding-left: 20px;
+  padding-right: 22px;
+  
   background-color: #63a63e;
 }
+
 a.header-order:hover,
 a.header-order:focus{
   background-color: #5fbb2d;
