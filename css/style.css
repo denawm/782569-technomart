@@ -60,6 +60,8 @@ a {
 }
 
 .login-link{
+  position: relative;
+  
   display: flex;
   margin-top: 10px;
   padding: 12px;
@@ -67,6 +69,20 @@ a {
   padding-right: 26px;
   margin-right: 10px;
 }
+
+.login-link::before{
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  
+  width: 20px;
+  height: 20px;
+  
+  background: url(../img/svg/icon-login.svg) no-repeat;
+  opacity: 0.3;
+}
+
 
 .registration-link{
   display: flex;
@@ -126,6 +142,18 @@ a {
   padding-right: 6px;
   margin-left: auto;
 }
+.header-bookmark::before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 19px;
+  
+  width: 20px;
+  height: 20px;
+  
+  background: url(../img/svg/icon-bookmark.svg) no-repeat;
+  opacity: 0.3;
+}
 
 .header-basket{
   padding-left: 25px;
@@ -136,7 +164,7 @@ a {
   content: "";
   position: absolute;
   top: 12px;
-  left: 18px;
+  left: 19px;
   
   width: 20px;
   height: 20px;
@@ -225,6 +253,15 @@ a {
   color: rgba(255, 255, 255, 0.6)
 }
 
+.header-upper-panel a:hover::before,
+.header-upper-panel a:focus::before{
+  opacity: 1;
+}
+
+.header-upper-panel a:active::before{
+ opacity: 0.5;  
+}
+
 input.search-input{
   display: flex;
   justify-content: center;
@@ -268,10 +305,17 @@ a.header-order:active{
 }
 
 .user-navigation a:active{
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
+.user-navigation a:hover::before,
+.user-navigation a:focus::before{
+  opacity: 1;
+}
+
+.user-navigation a:active::before{
+  opacity: 0.3;
+}
 
 a.entered-user:hover,
 a.entered-user:focus{
@@ -305,6 +349,7 @@ a.logo:active{
 }
 
 .header-lower-contacts a{
+  position: relative;
   display: inline-block;
   
   padding: 9px;
@@ -316,6 +361,18 @@ a.logo:active{
   color: #ee3643;
   border: 3px solid #ffffff;
  
+}
+
+.header-lower-contacts a::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  
+  width: 20px;
+  height: 20px;
+  
+  background: url(../img/svg/icon-phone.svg) no-repeat; 
 }
 
 .header-lower-contacts p{
@@ -332,7 +389,10 @@ a.entered-link{
   
   background-color: transparent;
 }
-
+.entered{
+  display: flex;
+  flex-direction: column;
+}
 /*  СЛАЙДЕРЫ И КНОПКИ   */
 
 .material{
