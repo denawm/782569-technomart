@@ -285,6 +285,7 @@ input.search-input{
   justify-content: center;
   min-height: 42px;
   border: none;
+  outline: 0px;
   
   background-color: #32425c;
 }
