@@ -886,6 +886,10 @@ h2.header-manufacturers{
   
 }
 
+.catalog-manufacturers img{
+  max-width: 100%;
+}
+
 .catalog-manufacturers a{
   display: flex;
   align-items: center;
