@@ -1,3 +1,47 @@
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Cuprum"), 
+    local("Cuprum-Regular"),
+    url("../fonts/cuprum.woff") format("woff"),
+    url("../fonts/cuprum.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local("Cuprum Italic"), 
+    local("Cuprum-Italic"),
+    url("../fonts/cuprumitalic.woff") format("woff"),
+    url("../fonts/cuprumitalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("PT Sans"), 
+    local("PTSans-Regular"),
+    url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("PT Sans Bold"), 
+    local("PTSans-Bold"),
+    url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -344,16 +388,17 @@ a.entered-user:focus{
 
 .main-header h1{
   margin: 0;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 47px;
+  margin-left: 51px;
   margin-top: 13px;
-  width: 198px;
+  width: 200px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 23px;
   font-weight: 400;
   font-style: italic;
+  
   color: #ee3643;
   
 }
@@ -373,10 +418,13 @@ a.logo:active{
   display: inline-block;
   
   padding: 9px;
-  padding-left: 70px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 0px;
+  width: 244px;
+  
   font-size: 21px;
   line-height: 21px;
+  letter-spacing: 0.09px;
   
   color: #ee3643;
   border: 3px solid #ffffff;
@@ -401,7 +449,9 @@ a.logo:active{
 .header-lower-contacts p{
   margin: 0;
   padding: 0;
-  margin-top: 7px;
+  margin-top: 8px;
+  
+  letter-spacing: 0.04px;
 }
 
 a.entered-link{
