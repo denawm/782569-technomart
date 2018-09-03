@@ -21,6 +21,17 @@
 }
 
 @font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Cuprum Bold"), 
+    local("Cuprum-Bold"),
+    url("../fonts/cuprumbold.woff") format("woff"),
+    url("../fonts/cuprumbold.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -173,6 +184,7 @@ a {
   background: url(../img/svg/icon-search.svg) no-repeat;
   
   opacity: 0.3;
+  cursor: pointer;
 }
 
 
@@ -507,10 +519,59 @@ a.entered-link{
 
 
 .offer{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  
+  position: relative;
+  
   width: 300px;
   height: 123px;
-  
   margin-bottom: 20px;
+}
+
+.offer::after{
+  content: "";
+  position: absolute;
+  
+  width: 80px;
+  height: 75px;
+  
+  background: url(../img/svg/icon-1.svg) no-repeat;
+}
+
+.material::after{
+  top: 31px;
+  right: 7px;
+  
+  background: url(../img/svg/icon-1.svg) no-repeat;
+}
+
+.tool::after{
+  top: 33px;
+  right: 23px;
+  
+  background: url(../img/svg/icon-2.svg) no-repeat;
+}
+.equipment::after{
+  top: 31px;
+  right: 29px;
+  
+  background: url(../img/svg/icon-3.svg) no-repeat;
+}
+
+.discount::after{
+  top: 26px;
+  right: 24px;
+  
+  background: url(../img/svg/icon-4.svg) no-repeat;
+}
+
+.delivery::after{
+  top: 32px;
+  right: 29px;
+  
+  background: url(../img/svg/icon-5.svg) no-repeat;
 }
 
 .material,
@@ -518,50 +579,76 @@ a.entered-link{
   margin-right: 20px;
 }
 
+.slide{
+  width: 100%;
+}
+
 .drills{
-  width: 620px;
-  min-height: 266px;
-  
-  background-image: url(../img/slider-1.jpg);
-  background-repeat: no-repeat
+  background: url(../img/slider-1.jpg) no-repeat;
 }
 
 .slides-switches {
   position: absolute;
-  top:600px;
+}
+
+.offer-slider button{
+  position: absolute;
+  
+  width: 30px;
+  height: 40px;
+  
+  border: none;
+  cursor: pointer;
+}
+
+.back-switch{
+  top: 114px;
+  left: 25px;
+  background: url(../img/svg/icon-left.svg) no-repeat;
+}
+
+.next-switch{
+  top: 114px;
+  right: 12px;
+  background: url(../img/svg/icon-right.svg) no-repeat;
 }
 
 .offer-slider{
+  position: relative;
   display: flex;
-}
-
-.offer-slider h3{
-  text-transform: uppercase;
+  width: 620px;
+  min-height: 266px;
 }
 
 .perforator{
-  width: 620px;
-  min-height: 266px;
   display: none;
   
-  background-image: url(../img/slider-2.jpg);
-  background-repeat: no-repeat
+  background: url(../img/slider-2.jpg) no-repeat;
 }
 
 .offer-type{
+  margin: 0;
+  padding: 0;
+  padding-left: 22px;
+  padding-top: 21px;
+  
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
+  
 }
 
 .offer-item{
-  text-align: center;
-  vertical-align: middle;
+  width: 135px;
+  padding: 10px 0px;
+  margin-top: 12px;
+  margin-left: 25px;
   
+  text-align: center;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  
+  border-radius: 3px;
   background-color:  rgba(0, 0, 0, 0.1);
 }
 
@@ -575,13 +662,23 @@ a.entered-link{
 }
 
 .slide h3{
+  margin: 0;
+  padding: 0;
+  margin-left: 24px;
+  margin-top: 23px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .slide p{
+  margin: 0;
+  padding: 0;
+  margin-left: 24px;
+  margin-top: 2px;
   font-size: 18px;
+  
   line-height: 24px;
 }
 
@@ -601,7 +698,7 @@ a.entered-link{
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  margin-right: 25px;
+  margin-right: 24px;
   width: 253px;
   height: 38px;
   
@@ -618,9 +715,19 @@ a.entered-link{
   background-color:  #ee3643;
 }
 
+.slider-btn{
+  position: absolute;
+  top:206px;
+  left: 25px;
+  
+  margin: 0;
+  padding: 0;
+  width: 195px;
+}
+
 .popular-btn:hover,
 .popular-btn:focus{
-   background-color: #ca2c37;
+  background-color: #ca2c37;
 }
 
 .popular-btn:active{
@@ -628,7 +735,8 @@ a.entered-link{
 }
 
 .popular-header h2{
-  padding-left: 25px;
+  padding-left: 28px;
+  padding-top: 1px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -639,6 +747,9 @@ a.entered-link{
   color: #32425c;
 }
 
+h2.header-manufacturers{
+  padding-left: 24px;
+}
 
 /*  КАРТОЧКИ ПЕРФОРАТОРОВ  */
 .catalog-product h3{
@@ -748,7 +859,7 @@ a.entered-link{
   align-items: center;
   justify-content: center;
   
-  width: 219px;
+  width: 218px;
   min-height: 143px;
   margin-bottom: 20px;
   
@@ -775,14 +886,15 @@ a.entered-link{
 
 
 .service{
-  min-height: 522px;
-  margin-bottom: 75px;
+  height: 522px;
+  margin-bottom: 79px;
     
   background-color: #f4f8f9;
 }
 
 .service h2{
-  padding-top: 62px;
+  padding-top: 65px;
+  padding-bottom: 1px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -812,7 +924,7 @@ a.entered-link{
 
 .service-columns{
   margin: 0;
-  margin-left: 0;
+  margin-top: 20px;
   padding: 0;
   
   
@@ -864,7 +976,7 @@ a.entered-link{
 }
 
 .service-delivery{
-   background: url(../img/delivery.png) no-repeat 100% 30px;
+   background: url(../img/delivery.png) no-repeat 152px 25px;
 }
 
 
@@ -873,8 +985,10 @@ a.entered-link{
 }
 
 .service-details h3{
-  margin-bottom: 30px;
+  margin-top: 19px;
+  margin-bottom: 25px;
   
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -901,6 +1015,8 @@ a.entered-link{
 /*  БЛОК КОМПАНИЯ  */
 
 .company{
+  margin-bottom: 86px;
+
   background-color: #ffffff;
 }
 
@@ -910,13 +1026,14 @@ a.entered-link{
 }
 
 .company-info{
-  padding-right: 120px;
+  padding-right: 109px;
 }
 
 .company-list{
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
+  padding-left: 36px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -925,21 +1042,43 @@ a.entered-link{
 }
 
 .company-list li{
-  padding-bottom: 25px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.company-list li:before{
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 9px;
+  
+  width: 25px;
+  height: 2px;
+  
+  background-color: #ee3643;
 }
 
 .company-information {
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
-  
-  width: 515px;
+  padding-bottom: 24px;
+  width: 525px;
+  letter-spacing: 0.14px;
+ 
+}
+p.contacts{
+  letter-spacing: 0;
+}
+p.promo{
+  padding-bottom: 21px;
+  letter-spacing: 0.04px;
 }
 
 .company-btn{
   margin-left: 0;
   margin-right: auto;
-  margin-bottom: 85px;
+  margin-top: 16px;
+  width: 220px;
 }
 
 .promo{
@@ -952,7 +1091,7 @@ a.entered-link{
 .company-title{
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -965,11 +1104,19 @@ a.entered-link{
   padding: 0;
   width: 300px;
   min-height: 38px;
-  margin-top: 48px;
+  margin-left: 6px;
+  margin-top: 40px;
 }
+
 .company-contact h4,
 .company-contact p{
   padding-left: 5px;
+}
+
+.company-contact-map{
+  display: flex;
+  margin-left: 6px;
+  margin-top: 7px;
 }
 
 /*  ФУТЕР ВЕРХНЯЯ ЧАСТЬ*/
@@ -992,18 +1139,19 @@ a.entered-link{
 .footer-upper-container p{
   margin: 0;
   padding: 0;
-  width: 325px
+  width: 325px;
+  margin-left: 4px;
 }
 
 .footer-list-container{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
+  margin-left: 23px;
 }
 
 .footer-top-list{
   display: flex;
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .footer-bottom-list{
@@ -1016,7 +1164,7 @@ a.entered-link{
 
 .footer-top-list li,
 .footer-bottom-list li{
-  margin-right: 55px;
+  margin-right: 59px;
  
 }
 
@@ -1027,7 +1175,7 @@ a.entered-link{
   align-items: center;
   width: 220px;
   min-height: 63px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   
   
   font-family: "Cuprum", Arial, sans-serif;
@@ -1108,11 +1256,13 @@ a.entered-link{
 
 .footer-devoloped{
   margin-right: 14px;
+  padding-top: 7px;
 }
 
 .footer-feedback{
-  margin-left: auto; 
-  margin-right: 50px;
+  margin-left: 90px;
+  margin-right: 52px;
+  padding-top: 7px;
 }
 
 .copyright{
@@ -1127,6 +1277,64 @@ a.entered-link{
   color: #ffd180;
 }
 
+.footer-social{
+  display: flex;
+  width: 160px;
+  height: 50px;
+  margin-left: 165px;
+  margin-top: 13px;
+}
+.footer-social a{
+  position: relative;
+  width: 42px;
+  height: 42px;
+  margin-right: 3px;
+
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+.social-vk::before{
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 8px;
+
+  width: 30px;
+  height: 30px;
+  
+  background: url(../img/svg/icon-vk.svg) no-repeat;
+}
+
+.social-fb::before{
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 15px;
+
+  width: 30px;
+  height: 30px;
+  
+  background: url(../img/svg/icon-fb.svg) no-repeat;
+}
+
+.social-in::before{
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10px;
+
+  width: 30px;
+  height: 30px;
+  
+  background: url(../img/svg/icon-insta.svg) no-repeat;
+}
+
+.footer-social a:hover,
+.footer-social a:focus,
+.footer-social a:active{
+  background-color: #ee3643;
+}
 /*  МОДАЛКА С ФОРМОЙ */
 
 .modal{
@@ -1206,7 +1414,7 @@ a.entered-link{
   flex-direction: column;
   align-items: center;
   
-  width:219px;
+  width:218px;
   min-height: 316px;
   
   
