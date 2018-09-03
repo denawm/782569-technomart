@@ -1316,8 +1316,11 @@ p.promo{
   padding-top: 7px;
 }
 
-.copyright{
-  width: 225px;
+p.copyright{
+  width: 240px;
+  padding-left: 1px;
+  padding-top: 2px;
+  letter-spacing: 0.08px;
 }
 
 .footer-bottom-panel a{
@@ -1332,7 +1335,7 @@ p.promo{
   display: flex;
   width: 160px;
   height: 50px;
-  margin-left: 165px;
+  margin-left: auto;
   margin-top: 13px;
 }
 .footer-social a{
