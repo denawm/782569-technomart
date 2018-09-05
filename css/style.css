@@ -423,6 +423,12 @@ a.logo:active{
   border: 3px solid #ffffff;
  
 }
+
+.header-lower-contacts a:hover::before{
+  transform: translatex(30px);
+  transition: 1s;
+}
+
 .header-upper-search{
   position: relative;
 }
@@ -1892,6 +1898,8 @@ a.catalog-option-down:focus
   transition: 1s;
   transform:rotateY(180deg); 
 }
+
+
 
 a.catalog-option-up:active path,
 a.catalog-option-down:active path{
