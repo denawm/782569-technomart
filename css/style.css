@@ -1847,7 +1847,7 @@ p.copyright{
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   
-  border-bottom: 1px dashed #ee3643;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .right-column-header a:hover,
