@@ -344,8 +344,8 @@ a.entered-user:focus{
 
 .main-header h1{
   margin: 0;
-  margin-right: 47px;
-  margin-left: 51px;
+  margin-right: 45px;
+  margin-left: 53px;
   margin-top: 13px;
   width: 200px;
   
@@ -374,9 +374,9 @@ a.logo:active{
   display: inline-block;
   
   padding: 9px;
-  padding-left: 20px;
+  padding-left: 21px;
   padding-right: 0px;
-  width: 244px;
+  width: 243px;
   
   font-size: 21px;
   line-height: 21px;
@@ -405,7 +405,7 @@ a.logo:active{
 .header-lower-contacts p{
   margin: 0;
   padding: 0;
-  margin-top: 8px;
+  margin-top: 7px;
   
   letter-spacing: 0.04px;
 }
