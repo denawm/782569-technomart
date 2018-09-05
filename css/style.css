@@ -1464,16 +1464,6 @@ p.copyright{
   border: none;
 }
 
-
-.visually-hidden{
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-
 /* СТИЛИЗАЦИЯ КАТАЛОГА */
 
 .catalog{
@@ -1843,6 +1833,20 @@ a.catalog-option-down:focus{
   background-color: aliceblue;
 }
 
-/*div,section,a,ul,li,p,footer,header{
-  outline: 2px solid red;}*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
