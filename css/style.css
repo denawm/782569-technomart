@@ -277,6 +277,7 @@ a {
 .header-upper-panel a:hover::before,
 .header-upper-panel a:focus::before{
   opacity: 1;
+  transition: 1s;
 }
 
 .header-upper-panel a:active::before{
@@ -339,6 +340,7 @@ a.header-order:active{
 .entered-btn:hover,
 .entered-btn:focus{
   opacity: 1;
+  transition: 1s;
 }
 
 .user-navigation a:active::before,
@@ -545,6 +547,8 @@ a.entered-link{
   margin-bottom: 20px;
 }
 
+
+
 .offer::after{
   content: "";
   position: absolute;
@@ -672,11 +676,19 @@ a.entered-link{
 .offer-item:hover,
 .offer-item:focus{
   background-color:  rgba(0, 0, 0, 0.2);;
+  transition: 0.3s;
 }
 
 .offer-item:active{
   background-color:  rgba(0, 0, 0, 0.3);;
 }
+
+.offer:hover::after{
+  transform: scale(1.1);
+  
+  transition: 1s;
+}
+
 
 .slide h3{
   margin: 0;
