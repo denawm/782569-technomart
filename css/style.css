@@ -11,7 +11,8 @@ body {
   background-color: #ffffff; 
 }
 
-a {
+a 
+{
   text-decoration: none;
 }
 
@@ -251,6 +252,7 @@ a {
   color: #ffffff;
 }
 
+
 .user-navigation a{
   color: #000000;
   background-color: #ffffff;
@@ -261,12 +263,17 @@ a {
 .search-input:hover,
 .search-input:focus{
   background-color: #212a3a;
-  transition: 1s;
+
 }
 
 .search-input:hover ~ .search-submit,
 .search-submit:hover{
   opacity: 1;
+}
+
+.header-upper-panel a:hover::before{
+  transform: rotate(720deg);
+  
 }
 
 .header-upper-panel a:active{ 
@@ -277,7 +284,6 @@ a {
 .header-upper-panel a:hover::before,
 .header-upper-panel a:focus::before{
   opacity: 1;
-  transition: 1s;
 }
 
 .header-upper-panel a:active::before{
@@ -883,6 +889,7 @@ h2.header-manufacturers{
   transition: 1s;
 }
 
+
 .product-buy,
 .product-bookmark{
   position: relative;
@@ -1477,6 +1484,8 @@ p.copyright{
   background-color: #ee3643;
   transition:  1s;
 }
+
+
 /*  МОДАЛКА С ФОРМОЙ */
 
 .modal{
@@ -1741,6 +1750,51 @@ p.copyright{
   height: 38px;
 }
 
+.range-controls{
+  width: 220px;
+  min-height: 80px;
+   background-color: #f7f3ec; 
+  margin-bottom: 9px;
+}
+.catalog-price-controls{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-price-controls input{
+  
+  width: 72px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-left: 13px;
+  padding-right: 10px;
+  
+  text-align: center;
+  font-size: 17px;
+  line-height: 18px;
+  
+  border: none;
+  background-color: #f7f3ec;
+}
+
+.catalog-price-controls label{
+  position: relative;
+}
+
+.catalog-min-price::after{
+  content: "";
+  position: absolute;
+  left: 105px;
+  top: 19px;
+  
+  width: 10px;
+  height: 1px;
+  background-color: black;
+  
+}
+
+
 .left-column-header {
   display: flex;
   height: 38px;
@@ -1749,7 +1803,7 @@ p.copyright{
   margin: 0;
   padding: 0;
   padding-left: 19px;
-
+  margin-bottom: 11px;
   
   font-size: 13px;
   line-height: 18px;
@@ -1798,6 +1852,7 @@ p.copyright{
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 14px;
   
   color: #000000;
 }
@@ -1997,4 +2052,12 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+div,
+::before,
+:hover,
+::after,
+a{
+  transition: all 0.5s ease-in-out;
 }
