@@ -1732,24 +1732,24 @@ p.copyright{
 
 .filters{
   width: 220px;
-  margin-right: 71px;
+  margin-right: 20px;
   
 }
 .column-header{
   display: flex;
-  margin-bottom: 20px;
+
   height: 38px;
 }
 
 .left-column-header {
   display: flex;
   height: 38px;
-  width: 207px;
+  width: 201px;
   align-items: center;
   margin: 0;
   padding: 0;
   padding-left: 19px;
-  margin-right: 20px;
+
   
   font-size: 13px;
   line-height: 18px;
@@ -1764,12 +1764,12 @@ p.copyright{
   
   margin: 0;
   padding: 0;
-  padding-left: 19px;
+ 
   display: flex;
   height: 38px;
   width: 700px;
   align-items: center;
-  
+  margin-bottom: 20px;
 }
 
 .right-column-header p{
