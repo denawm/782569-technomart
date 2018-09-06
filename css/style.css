@@ -273,7 +273,6 @@ a
 
 .header-upper-panel a:hover::before{
   transform: rotate(720deg);
-  
 }
 
 .header-upper-panel a:active{ 
@@ -407,7 +406,7 @@ a.logo:focus{
 
 a.logo:active{
   background-color: #ba2732;
-  opacity: 1;
+  color: #ffffff;
 }
 
 .header-lower-contacts a{
@@ -1854,6 +1853,9 @@ p.copyright{
 }
 
 .filter ul{
+  padding: 0;
+  margin: 0;
+  
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
