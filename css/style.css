@@ -324,7 +324,6 @@ a.header-order:active{
 .main-navigation a:hover,
 .main-navigation a:focus{
   background-color: #293449;
-  transition: 0.5s;
 }
 
 .main-navigation a:active{
@@ -346,7 +345,6 @@ a.header-order:active{
 .entered-btn:hover,
 .entered-btn:focus{
   opacity: 1;
-  transition: 1s;
 }
 
 .user-navigation a:active::before,
@@ -432,7 +430,6 @@ a.logo:active{
 
 .header-lower-contacts a:hover::before{
   transform: translatex(30px);
-  transition: 1s;
 }
 
 .header-upper-search{
@@ -697,7 +694,6 @@ a.entered-link{
 
 .offer:hover::after{
   transform: scale(1.1);
-  
   transition: 1s;
 }
 
@@ -2055,9 +2051,10 @@ input[type="radio"].visually-hidden {
 }
 
 div,
+a,
 ::before,
 :hover,
-::after,
-a{
+::after
+{
   transition: all 0.5s ease-in-out;
 }
