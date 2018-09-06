@@ -1762,14 +1762,14 @@ p.copyright{
 .right-column-header{
   position: relative;
   
+  margin: 0;
+  padding: 0;
+  padding-left: 19px;
   display: flex;
   height: 38px;
   width: 700px;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  padding-left: 19px;
-  margin-bottom: 20px;
+  
 }
 
 .right-column-header p{
