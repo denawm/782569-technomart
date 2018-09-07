@@ -1837,8 +1837,16 @@ p.copyright{
 .filter fieldset {
   padding: 0;
   margin: 0;
+  margin-bottom: 16px;
   
   border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+}
+
+fieldset.filter-manufacturers{
+  padding-bottom: 2px;
+  margin-bottom: 17px;
 }
 
 .filter legend {
@@ -1852,13 +1860,81 @@ p.copyright{
   color: #000000;
 }
 
+.filter-option{
+  margin-bottom: 20px;
+}
+
+.filter-option label{
+  position: relative;
+  
+  display: block;
+  
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: -2px;
+  
+  width: 24px;
+  height: 24px;
+
+  background: urL("../img/svg/checkbox-off.svg") no-repeat;
+}
+
+.filter-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  top: -2px;
+  
+  width: 26px;
+  height: 24px;
+  
+  background: url("../img/svg/checkbox-on.svg") no-repeat;
+}
+
+.filter-radio + label::before{
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -3px;
+  
+  width: 26px;
+  height: 26px;
+
+  background: urL("../img/svg/radio-off.svg") no-repeat;
+}
+
+.filter-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: -35px;
+  top: -3px;
+  
+  width: 26px;
+  height: 24px;
+  
+  background: url("../img/svg/radio-on.svg") no-repeat;
+}
+
 .filter ul{
   padding: 0;
   margin: 0;
+  padding-left: 34px;
   
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.power{
+  letter-spacing: 0.5px;
 }
 
 .filter-input:hover,
@@ -1877,17 +1953,18 @@ p.copyright{
 }
 
 .filter-btn{
+  margin-top: 17px;
+  padding: 9px 38px;
+  
   font: inherit;
   line-height: 18px;
-  padding: 10px 38px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
- 
   color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #e5e5e5;
+  text-align: center;
+  text-transform: uppercase;
   
+  background-color: #ffffff;
+  
+  border: 1px solid #e5e5e5;
   border-radius: 3px;
 }
 
