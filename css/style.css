@@ -614,8 +614,17 @@ a.entered-link{
   background: url(../img/slider-1.jpg) no-repeat;
 }
 
-.slides-switches {
-  position: absolute;
+.perforator{
+  display: none;
+  background: url(../img/slider-2.jpg) no-repeat;
+}
+
+#slider-1:checked ~ .slide{
+  display: block;
+}
+
+#slider-2:checked ~ .perforator{
+  display: block;
 }
 
 .offer-slider button{
@@ -640,6 +649,51 @@ a.entered-link{
   background: url(../img/svg/icon-right.svg) no-repeat;
 }
 
+.sliders-switches{
+  position: absolute;
+  
+  bottom: 43px;
+  left: 255px;
+  
+  display: flex;
+  list-style: none;
+}
+
+.slider-radio + label::before{
+  content: "";
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+  
+  background-color: #ffffff;
+  
+  border-radius: 50%;
+}
+
+.slider-radio:checked + label::after {
+
+  content: "";
+  
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+ 
+  border-radius: 50%;
+  background: #ee3643;;
+}
+
+.sliders-switches li{
+  position: relative;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  
+  cursor: pointer;
+}
+
 .offer-slider{
   position: relative;
   display: flex;
@@ -647,11 +701,6 @@ a.entered-link{
   min-height: 266px;
 }
 
-.perforator{
-  display: none;
-  
-  background: url(../img/slider-2.jpg) no-repeat;
-}
 
 .offer-type{
   margin: 0;
@@ -1935,11 +1984,6 @@ fieldset.filter-manufacturers{
 
 .power{
   letter-spacing: 0.5px;
-}
-
-.filter-input:hover,
-.filter-input:focus {
-  
 }
 
 .filter-input:active + label{

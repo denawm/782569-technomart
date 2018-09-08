@@ -115,9 +115,15 @@
             </div>
             <button class="back-switch" type="button" aria-label="Переключить слайдер назад"></button>
             <button class="next-switch" type="button" aria-label="Переключить слайдер вперед"></button>
-            <ul class="slides-switches">
-              <li></li>
-              <li></li>
+            <ul class="sliders-switches">
+              <li>
+                <input class="slider-radio visually-hidden" type="radio" id="slider-1" name="toggle" checked>
+                <label for="slider-1"></label>
+              </li>
+              <li class="active">
+                <input class="slider-radio visually-hidden" type="radio" id="slider-2" name="toggle">
+                <label for="slider-2"></label>
+              </li>
             </ul>
           </div>
         </section>
