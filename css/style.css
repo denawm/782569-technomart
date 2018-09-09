@@ -606,7 +606,8 @@ a.entered-link{
   margin-right: 20px;
 }
 
-.offer-slider button{
+
+.arrow-controls label{
   position: absolute;
   
   width: 30px;
@@ -619,12 +620,14 @@ a.entered-link{
 .back-switch{
   top: 114px;
   left: 25px;
+  
   background: url(../img/svg/icon-left.svg) no-repeat;
 }
 
 .next-switch{
   top: 114px;
   right: 12px;
+  
   background: url(../img/svg/icon-right.svg) no-repeat;
 }
 
