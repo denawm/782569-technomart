@@ -606,27 +606,6 @@ a.entered-link{
   margin-right: 20px;
 }
 
-.slide{
-  width: 100%;
-}
-
-.drills{
-  background: url(../img/slider-1.jpg) no-repeat;
-}
-
-.perforator{
-  display: none;
-  background: url(../img/slider-2.jpg) no-repeat;
-}
-
-#slider-1:checked ~ .slide{
-  display: block;
-}
-
-#slider-2:checked ~ .perforator{
-  display: block;
-}
-
 .offer-slider button{
   position: absolute;
   
@@ -659,7 +638,16 @@ a.entered-link{
   list-style: none;
 }
 
-.slider-radio + label::before{
+.sliders-switches li{
+  position: relative;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  
+  cursor: pointer;
+}
+
+.sliders-switches label::before{
   content: "";
   position: absolute;
 
@@ -671,8 +659,8 @@ a.entered-link{
   border-radius: 50%;
 }
 
-.slider-radio:checked + label::after {
-
+#slider-1:checked ~ .sliders-switches label[for="slider-1"]::after,
+#slider-2:checked ~ .sliders-switches label[for="slider-2"]::after{
   content: "";
   
   position: absolute;
@@ -685,13 +673,26 @@ a.entered-link{
   background: #ee3643;;
 }
 
-.sliders-switches li{
-  position: relative;
-  margin-left: 0px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  
-  cursor: pointer;
+.slide{
+  width: 100%;
+  display: none;
+}
+
+.drills{
+  background: url(../img/slider-1.jpg) no-repeat;
+}
+
+.perforator{
+  background: url(../img/slider-2.jpg) no-repeat;
+}
+
+
+#slider-1:checked  ~.perforator{
+  display: block;
+} 
+
+#slider-2:checked ~ .drills{
+  display: block;
 }
 
 .offer-slider{
@@ -700,7 +701,6 @@ a.entered-link{
   width: 620px;
   min-height: 266px;
 }
-
 
 .offer-type{
   margin: 0;
@@ -925,7 +925,6 @@ h2.header-manufacturers{
 
 .catalog-product:hover .product-btn{
    display: flex;
-  
 }
 
 .catalog-product:hover {
@@ -1145,7 +1144,6 @@ h2.header-manufacturers{
   background-color: #ffffff;
   border: none;
 }
-
 
 .service-details{
   width: 100%;
