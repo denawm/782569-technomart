@@ -98,7 +98,7 @@ a
   width: 270px;
   margin-top: 10px;
   margin-left: 22px;
-  margin-right: 51px;
+  margin-right: 50px;
   
   text-align: center;
   font-size: 14px;
@@ -118,7 +118,6 @@ a
 .header-upper-panel .container{
   display: flex;
   align-items:stretch;
-  flex-wrap: wrap;
 }
 
 .search-submit{
