@@ -16,6 +16,10 @@ a
   text-decoration: none;
 }
 
+img{
+  max-width: 100%;
+}
+
 /*  ШАПКА САЙТА  */
 
 .main-header-logo{
@@ -105,7 +109,6 @@ a
   
   color: #32425c;
 }
-
 
 .header-upper-panel{
   display: flex;
@@ -657,7 +660,6 @@ a.entered-link{
   height: 10px;
   
   background-color: #ffffff;
-  
   border-radius: 50%;
 }
 
@@ -673,6 +675,7 @@ a.entered-link{
  
   border-radius: 50%;
   background: #ee3643;;
+  
 }
 
 .slide{
@@ -921,7 +924,7 @@ h2.header-manufacturers{
   padding: 40px 0;
   
   background-color: #ffffff;
-  z-index: 9;
+  z-index: 1;
   
 }
 
@@ -1018,10 +1021,6 @@ h2.header-manufacturers{
   align-items: center;
   justify-content: space-between;
   
-}
-
-.catalog-manufacturers img{
-  max-width: 100%;
 }
 
 .catalog-manufacturers a{
@@ -1529,47 +1528,6 @@ p.copyright{
   transition:  1s;
 }
 
-
-/*  МОДАЛКА С ФОРМОЙ */
-
-.modal{
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  color: #a9a9a9;
-  
-  border-top: 7px solid #ff5357;
-  background-color: #ffffff; 
-}
-.modal-content{
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  color: #000000;
-}
-.modal input{
-  font: inherit;
-
-  background-color: transparent;
-  border: 2px solid #e9eced;
-}
-.modal-footer{
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  
-  background-color: #f4f4f4; 
-}
-
-.modal-btn{
-  text-align: center;
-  vertical-align: middle;
-  font: inherit;
-  color: #ffffff;
-  border: none;
-}
-
 /* СТИЛИЗАЦИЯ КАТАЛОГА */
 
 .catalog{
@@ -1610,7 +1568,6 @@ p.copyright{
 }
 
 .catalog-product img{
-  max-width:100%;
   margin-top: 32px;
   margin-bottom: 28px;
 }
@@ -1624,7 +1581,7 @@ p.copyright{
   width: 60px;
   height: 60px;
   background: url(../img/new.png) no-repeat 0 0;
-  z-index: 10;
+  z-index: 2;
 }
 
 .offers .new::before{
@@ -2116,12 +2073,135 @@ p.perforators-text{
   color: #000000;
 }
 
-/* МОДАЛКА С КОРЗИНОЙ */
+
+/*  МОДАЛКА С ФОРМОЙ */
 .modal-oject,
 .modal-map,
 .modal-cart{
-  display: none;
+  position: fixed;
+  z-index: 10;
 }
+
+.modal-map{
+  display: none;
+  left: 50%;
+  bottom: 300px;
+  
+  width: 940px;
+  height: 445px;
+  margin-left: -470px;
+  
+  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+}
+
+.mail-form{
+  bottom: 200px; 
+  left: 50%;
+  margin-left: -310px;
+  box-shadow:0 20px 40px rgba(0, 0, 0, 0.75);
+  border-top: 7px solid #ff5357;
+}
+
+.modal{
+  display: flex;
+  flex-wrap: wrap;
+  
+  width: 460px;
+  padding: 50px 80px;
+  padding-bottom: 35px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+  
+ 
+  background-color: #ffffff; 
+}
+
+.modal-close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  
+  width: 22px;
+  height: 22px;
+  
+  background: url("../img/svg/icon-close.svg") no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-content{
+  padding-bottom: 12px;
+  
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.textarea{
+  resize: none;
+  width: 460px;
+}
+
+.modal p{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.modal p:first-of-type{
+  margin-right: 20px;
+}
+ 
+.modal p:last-of-type{
+  width: 460px;
+  margin-bottom: 0px;
+}
+
+.modal input,
+.modal textarea{
+  box-sizing: border-box;
+  padding: 9px 13px;
+  
+  font: inherit;
+  
+  background-color: transparent;
+  border: 2px solid #e9eced;
+  border-radius: 3px;
+ 
+}
+
+.modal input{
+  width: 220px;
+}
+
+.modal-footer{
+  width: 460px;
+  padding: 37px 80px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  background-color: #f4f4f4; 
+}
+
+.modal-btn{
+  margin: 0;
+  padding: 0;
+  width: 460px;
+  font: inherit;
+  color: #ffffff;
+  border: none;
+}
+
+
+/* МОДАЛКА С КОРЗИНОЙ*/
+
 
 .modal-footer{
   font-family: "Cuprum", Arial, sans-serif;

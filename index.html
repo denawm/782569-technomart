@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -380,15 +381,21 @@
       </div>
     </footer>
     <section class="modal-oject mail-form">
-      <a class="modal-close" href="#" aria-label="Закрыть форму отправки"></a>
+      <button class="modal-close" href="#" aria-label="Закрыть форму отправки"></button>
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма отправки">
         <div class="modal">
+          <p>
           <label class="modal-content" for="modal-username">Ваше имя:</label>
             <input class="modal-contact" id="modal-username" type="text" name="modal-name" placeholder="Имя Фамилия">
+          </p>
+          <p>
           <label class="modal-content" for="modal-email">Ваш e-mail:</label>
             <input class="modal-contact" id="modal-email" type="text" name="modal-email" placeholder="email@xample.com">
+            </p>
+           <p>
           <label class="modal-content" for="modal-text">Текст письма:</label>
-            <textarea class="modal-contact textarea" id="modal-text" name="modal-text" rows="5" placeholder="В свободной форме"></textarea>
+            <textarea class="modal-contact textarea" id="modal-text" name="modal-text" rows="5" placeholder="В свободной форме" resize="none"></textarea>
+         </p>
         </div>
         <div class="modal-footer">
           <button class="modal-btn popular-btn" type="submit">Отправить</button>
@@ -398,7 +405,7 @@
     <section class="modal-object modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/big-map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <a class="modal-close" href="#" aria-label="Закрыть карту"></a>
+      <button class="modal-close" href="#" aria-label="Закрыть карту"></button>
     </section>
   </body>
 </html>
