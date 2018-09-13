@@ -1544,14 +1544,14 @@ p.copyright{
 .catalog-list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: -20px;
   
 }
 
 .catalog-list-items{
   display: flex;
   flex-wrap: wrap;
-  
+  margin-left: -20px;
   margin-bottom: 32px;
 }
 
@@ -1559,6 +1559,7 @@ p.copyright{
 
 .catalog-product{
   position: relative;
+  margin-left: 20px;
   
   display: flex;
   flex-direction: column;
@@ -1594,14 +1595,6 @@ p.copyright{
 .offers .new::before{
   top: 0px;
   right: 0px;
-}
-
-.catalog-list-items .catalog-product{
-  margin-right: 20px;
-}
-
-.catalog-list-items .catalog-product:nth-of-type(3n){
-  margin-right: 0px;
 }
 
 .breadcrumbs{
