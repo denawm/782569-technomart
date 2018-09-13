@@ -60,6 +60,7 @@ img{
   align-items: flex-start;
   flex-wrap: wrap;
   margin-left: 18px;
+  width: 281px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -492,6 +493,7 @@ a.entered-link{
 
 .entered{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-left: 0;
 }
