@@ -1024,8 +1024,7 @@ h2.header-manufacturers{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  
+  margin-left: -20px;
 }
 
 .catalog-manufacturers a{
@@ -1036,6 +1035,7 @@ h2.header-manufacturers{
   width: 218px;
   min-height: 143px;
   margin-bottom: 20px;
+  margin-left: 20px;
   
   border: 1px solid #e7e7e7;
   
