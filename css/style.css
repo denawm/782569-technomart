@@ -1819,12 +1819,10 @@ p.copyright{
   
   margin: 0;
   padding: 0;
- 
-  display: flex;
   height: 38px;
-  width: 700px;
-  align-items: center;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .right-column-header p{
@@ -1969,6 +1967,9 @@ fieldset.filter-manufacturers{
   border-radius: 3px;
 }
 
+.right-catalog-column{
+  width: 700px;
+}
 
 .right-column-header{
   font-size: 13px;
