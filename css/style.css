@@ -1062,9 +1062,14 @@ h2.header-manufacturers{
   background-color: #f4f8f9;
 }
 
-.service h2{
+.service .container{
   padding-top: 65px;
-  padding-bottom: 1px;
+}
+
+.service h2{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -1122,8 +1127,7 @@ h2.header-manufacturers{
 
 .service-columns button{
   width: 240px;
-  min-height: 61px;
-  padding-left: 22px;
+  padding: 14px 22px 15px 22px;
   
   text-align: left;
   font: inherit;
@@ -1210,14 +1214,13 @@ h2.header-manufacturers{
 }
 
 .company-info{
-  padding-right: 109px;
+  margin-right: 115px;
 }
 
 .company-list{
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
-  padding-left: 36px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -1227,13 +1230,15 @@ h2.header-manufacturers{
 
 .company-list li{
   position: relative;
+  
   padding-bottom: 20px;
+  padding-left: 36px;
 }
 
 .company-list li:before{
   content: "";
   position: absolute;
-  left: -36px;
+  left: 0px;
   top: 9px;
   
   width: 25px;
@@ -1285,22 +1290,17 @@ p.promo{
 }
 .company-contact-btn{
   margin: 0;
+  margin-top: 40px;
   padding: 0;
   padding-left: 26px;
   padding-right: 21px;
+  
   min-height: 38px;
-  margin-left: 6px;
-  margin-top: 40px;
-}
-
-.company-contact h4,
-.company-contact p{
-  padding-left: 5px;
 }
 
 .company-contact-map{
   display: flex;
-  margin-left: 6px;
+  
   margin-top: 7px;
 }
 
