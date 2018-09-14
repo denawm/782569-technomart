@@ -1175,6 +1175,10 @@ h2.header-manufacturers{
   
 }
 
+.catalog-manufacturers img{
+  width: 205px;
+  height: 130px;
+}
 
 .catalog-manufacturers a:hover,
 .catalog-manufacturers a:focus{
