@@ -327,14 +327,12 @@ img {
 
 .header-upper-panel a:hover,
 .header-upper-panel a:focus,
-.search-input:hover,
-{
+.search-input:hover{
   background-color: #212a3a;
 }
 
 .search-input:focus{
   background-color: white;
-  
 }
 
 .search-input:focus ~ .search-submit path,
