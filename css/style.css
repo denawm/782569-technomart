@@ -756,13 +756,11 @@ a.entered-link{
 .sliders-switches{
   position: absolute;
   
-  bottom: 43px;
+  bottom: 23px;
   left: 255px;
   
   display: -webkit-box;
-  
   display: -ms-flexbox;
-  
   display: flex;
   list-style: none;
 }
