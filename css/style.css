@@ -2000,11 +2000,46 @@ p.copyright{
 }
 
 .range-controls{
-  width: 220px;
-  min-height: 80px;
-   background-color: #f7f3ec; 
+  position: relative;
+  
+  padding: 39px 30px;
   margin-bottom: 9px;
+  
+  background-color: #f7f3ec; 
 }
+
+.range{
+  width: 140px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.bar{
+  height: 2px;
+  
+  background: #d7dcde;
+}
+
+.toggle{
+  position: absolute;
+  top: 30px;
+  width: 4px;
+  height: 4px;
+  
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ababab;
+  cursor: pointer;
+}
+
+.toggle-min{
+  left: 21px;
+}
+
+.toggle-max{
+  left: 161px;
+}
+
 .catalog-price-controls{
   display: -webkit-box;
   display: -ms-flexbox;
