@@ -2264,6 +2264,15 @@ fieldset.filter-manufacturers{
 
 .right-column-header a:active{
   color: #ee3643;
+  border: none;
+}
+
+.right-column-header .current,
+.right-column-header .current path{
+  color: #ee3643;
+  border: none;
+  fill: #ee3643;
+  opacity: 1;
 }
 
 a.catalog-option-up,
