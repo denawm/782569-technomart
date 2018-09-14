@@ -2145,7 +2145,7 @@ fieldset.filter-manufacturers{
   background: urL("../img/svg/checkbox-off.svg") no-repeat;
 }
 
-.filter-checkbox:checked + label::after {
+.filter-checkbox:checked + label::before {
   content: "";
 
   position: absolute;
@@ -2153,7 +2153,7 @@ fieldset.filter-manufacturers{
   top: -2px;
   
   width: 26px;
-  height: 24px;
+  height: 26px;
   
   background: url("../img/svg/checkbox-on.svg") no-repeat;
 }
@@ -2170,7 +2170,7 @@ fieldset.filter-manufacturers{
   background: urL("../img/svg/radio-off.svg") no-repeat;
 }
 
-.filter-radio:checked + label::after {
+.filter-radio:checked + label::before {
   content: "";
 
   position: absolute;
@@ -2178,7 +2178,7 @@ fieldset.filter-manufacturers{
   top: -3px;
   
   width: 26px;
-  height: 24px;
+  height: 26px;
   
   background: url("../img/svg/radio-on.svg") no-repeat;
 }
