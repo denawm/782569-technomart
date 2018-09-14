@@ -2143,6 +2143,7 @@ fieldset.filter-manufacturers{
   height: 24px;
 
   background: urL("../img/svg/checkbox-off.svg") no-repeat;
+  opacity: 0.6;
 }
 
 .filter-checkbox:checked + label::before {
@@ -2156,6 +2157,7 @@ fieldset.filter-manufacturers{
   height: 26px;
   
   background: url("../img/svg/checkbox-on.svg") no-repeat;
+  opacity: 0.6;
 }
 
 .filter-radio + label::before{
@@ -2168,6 +2170,7 @@ fieldset.filter-manufacturers{
   height: 26px;
 
   background: urL("../img/svg/radio-off.svg") no-repeat;
+  opacity: 0.6;
 }
 
 .filter-radio:checked + label::before {
@@ -2181,6 +2184,7 @@ fieldset.filter-manufacturers{
   height: 26px;
   
   background: url("../img/svg/radio-on.svg") no-repeat;
+  opacity: 0.6;
 }
 
 .filter ul{
@@ -2195,6 +2199,10 @@ fieldset.filter-manufacturers{
 
 .power{
   letter-spacing: 0.5px;
+}
+
+.filter-input:hover + label::before{
+  opacity: 1;
 }
 
 .filter-input:active + label{
