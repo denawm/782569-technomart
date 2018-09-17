@@ -2475,6 +2475,7 @@ p.perforators-text{
   background: url("../img/svg/icon-close.svg") no-repeat;
   cursor: pointer;
   border: none;
+  z-index: 1;
 }
 
 .modal-content{
