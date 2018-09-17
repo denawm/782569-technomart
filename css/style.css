@@ -2368,10 +2368,58 @@ p.perforators-text{
 
 
 /*  МОДАЛКА С ФОРМОЙ */
-.modal-object
-{
+.modal-object{
+  display: none;
   position: fixed;
   z-index: 10;
+}
+
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  display: none;
+  
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background: rgba(41, 52, 73, 0.75);
+}
+
+.overlay-show{
+  display: block;
+  animation-name: back;
+  animation-duration: 0.9s;
+}
+
+@keyframes back{
+  0% {transform: translateX(-2000px);}
+  100% {transform: translateX(0px);}
+}
+
+.modal-show{
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0px);}
+}
+
+.modal-error {
+  animation-name: error;
+  animation-duration: 0.6s;
+}
+
+@keyframes error {
+  0, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 80% {transform: translateX(-10px);}
+  20%, 40%, 60%, 90% {transform: translateX(10px);}
 }
 
 .modal{
@@ -2382,7 +2430,7 @@ p.perforators-text{
       flex-wrap: wrap;
   
   width: 460px;
-  padding: 50px 80px;
+  padding: 46px 80px;
   padding-bottom: 35px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -2394,10 +2442,8 @@ p.perforators-text{
 
 .modal-map{
   left: 50%;
-  bottom: 350px;
-  
-  display: none;
-  
+  bottom: 358px;
+
   width: 940px;
   height: 445px;
   margin-left: -470px;
@@ -2409,10 +2455,8 @@ p.perforators-text{
 }
 
 .mail-form{
-  bottom: 200px; 
+  bottom: 201px; 
   left: 50%;
-  
-  display: none;
   
   margin-left: -310px;
   -webkit-box-shadow:0 20px 40px rgba(0, 0, 0, 0.75);
@@ -2422,7 +2466,7 @@ p.perforators-text{
 
 .modal-close{
   position: absolute;
-  top: 8px;
+  top: 9px;
   right: 8px;
   
   width: 22px;
@@ -2434,7 +2478,7 @@ p.perforators-text{
 }
 
 .modal-content{
-  padding-bottom: 12px;
+  padding-bottom: 11px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -2506,7 +2550,6 @@ p.perforators-text{
 
 .modal-btn{
   margin: 0;
-  padding: 0;
   width: 460px;
   font: inherit;
   color: #ffffff;
@@ -2517,8 +2560,6 @@ p.perforators-text{
 .modal-cart{
   bottom: 330px; 
   left: 50%;
-  
-  display: none;
   
   margin-left: -310px;
   
@@ -2584,20 +2625,6 @@ p.cart-text{
 .next:focus{
   background-color: aliceblue;
 }
-
-.modal-overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  
-  display: none;
-  
-  width: 100%;
-  height: 100%;
-  z-index: 8;
-  background: rgba(41, 52, 73, 0.75);
-}
-
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
