@@ -121,11 +121,7 @@ overlay.addEventListener("click", function(){
   
 });
     
-
-
-
-
-
+// Кнопочки в сервисах.
 
 var btn_delivery = document.querySelector(".btn-delivery");
 var btn_warrianty = document.querySelector(".btn-warrianty");
