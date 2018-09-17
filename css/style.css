@@ -1196,11 +1196,6 @@ h2.header-manufacturers{
 
 
 /*  БЛОК СЕРВИСЫ  */
-.service-warrianty,
-.service-credit{
-  display: none;
-}
-
 
 .service{
   height: 522px;
@@ -1308,17 +1303,33 @@ h2.header-manufacturers{
   min-height: 260px;
 }
 
+.service-delivery{
+  background: url(../img/delivery.png) no-repeat 152px 25px;
+  width: 640px;
+}
+
+.service-warrianty{
+  background: url(../img/warrianty.png) no-repeat 240px 3px;
+  width: 640px;
+  
+}
+.service-credit{
+  background: url(../img/credit.png) no-repeat 165px 0px;
+  width: 640px;
+}
+
+.service-credit,
+.service-warrianty{
+  display: none;
+}
+
 .service-delivery p {
   width: 280px;
 }
 
-.service-delivery{
-   background: url(../img/delivery.png) no-repeat 152px 25px;
-}
-
-
 .service-warrianty p{
-  width: 380px;
+  width: 385px;
+  letter-spacing: 0.15px;
 }
 
 .service-details h3{
@@ -1330,7 +1341,7 @@ h2.header-manufacturers{
 }
 
 .service-btn{
-  margin-top: 30px;
+  padding: 10px 45px;
 }
 
 .service-details-title{
@@ -1347,6 +1358,7 @@ h2.header-manufacturers{
 .service-details-text{
   margin: 0;
   padding: 0;
+  margin-bottom: 33px;
 }
 
 /*  БЛОК КОМПАНИЯ  */
