@@ -63,7 +63,7 @@ form.addEventListener("submit", function(evt){
 var buy_btn = document.querySelector(".product-buy");
 var popup_cart = document.querySelector(".modal-cart");
 var close_cart = popup_cart.querySelector(".modal-close");
-      
+
 buy_btn.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup_cart.classList.add("modal-show");
@@ -75,7 +75,6 @@ close_cart.addEventListener("click", function(evt){
   popup_cart.classList.remove("modal-show");
   overlay.classList.remove("overlay-show");
 });
-      
       
 window.addEventListener("keydown", function(evt){
   if (evt.keyCode === 27) {
@@ -122,3 +121,51 @@ overlay.addEventListener("click", function(){
   
 });
     
+
+
+
+
+
+
+var btn_delivery = document.querySelector(".btn-delivery");
+var btn_warrianty = document.querySelector(".btn-warrianty");
+var btn_credit = document.querySelector(".btn-credit");
+
+var delivery = document.querySelector(".service-delivery");
+var warrianty = document.querySelector(".service-warrianty");
+var credit = document.querySelector(".service-credit");
+
+btn_delivery.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  delivery.classList.add("service-show");
+  btn_delivery.classList.add("service-btn-active");
+    if (btn_warrianty.classList.contains("service-btn-active") || btn_credit.classList.contains("service-btn-active")){
+        evt.preventDefault();
+        btn_warrianty.classList.remove("service-btn-active")  || btn_credit.classList.remove("service-btn-active");
+        warrianty.classList.remove("service-show") || credit.classList.remove("service-show");
+    }
+});
+
+btn_warrianty.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  warrianty.classList.add("service-show");
+  btn_warrianty.classList.add("service-btn-active");
+    if (btn_delivery.classList.contains("service-btn-active") || btn_credit.classList.contains("service-btn-active")){
+        evt.preventDefault();
+        btn_delivery.classList.remove("service-btn-active")  || btn_credit.classList.remove("service-btn-active");
+        delivery.classList.remove("service-show") || credit.classList.remove("service-show");
+    }
+});
+
+btn_credit.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  credit.classList.add("service-show");
+  btn_credit.classList.add("service-btn-active");
+    if (btn_delivery.classList.contains("service-btn-active") || btn_warrianty.classList.contains("service-btn-active")){
+        evt.preventDefault();
+        btn_delivery.classList.remove("service-btn-active")  || btn_warrianty.classList.remove("service-btn-active");
+        delivery.classList.remove("service-show") || warrianty.classList.remove("service-show");
+    }
+});
+
+

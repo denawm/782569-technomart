@@ -1294,6 +1294,18 @@ h2.header-manufacturers{
   border: none;
 }
 
+.service-columns .service-btn-active{
+  color: #32425c;
+  background-color: #ffffff;
+  border: none;
+}
+
+.service-columns .service-btn-active:hover,
+.service-columns .service-btn-active:focus{
+  color: #32425c;
+  background-color: #ffffff;
+}
+
 .service-details{
   width: 100%;
   margin-left: 79px;
@@ -1319,7 +1331,8 @@ h2.header-manufacturers{
 }
 
 .service-credit,
-.service-warrianty{
+.service-warrianty,
+.service-delivery{
   display: none;
 }
 
@@ -2625,6 +2638,19 @@ p.cart-text{
 .next:hover,
 .next:focus{
   background-color: aliceblue;
+}
+
+.service-show{
+  display: block;
+  animation-name: show;
+  animation-duration: 0.5s;
+}
+
+@keyframes show {
+  0% {transform: translateX(20px)}
+  70% {transform: translateX(30px);}
+  90% {transform: translateX(-10px);}
+  100% {transform: translateX(0px);}
 }
 
 .visually-hidden:not(:focus):not(:active),
