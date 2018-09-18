@@ -1,14 +1,24 @@
 var buy_btn = document.querySelectorAll(".product-buy");
+var bookmark_btn = document.querySelectorAll(".product-bookmark");
 var popup_cart = document.querySelector(".modal-cart");
 var close_cart = popup_cart.querySelector(".modal-close");
+var basket = document.querySelector(".header-basket");
+var bookmark = document.querySelector(".header-bookmark");
 var overlay = document.querySelector(".modal-overlay");
 
 for(var i = 0; i < buy_btn.length; i++){
-  
   buy_btn[i].addEventListener("click", function (evt) {
   evt.preventDefault();
   popup_cart.classList.add("modal-show");
+  basket.classList.add("basket-catalog");
   overlay.classList.add("overlay-show");
+});
+}
+
+for(var i = 0; i < bookmark_btn.length; i++){
+  bookmark_btn[i].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  bookmark.classList.add("basket-catalog");
 });
 }
 

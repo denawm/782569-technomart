@@ -208,9 +208,11 @@ img {
   padding-left: 27px;
   padding-right: 4px;
 }
+
 .basket-catalog{
   background-color: #ee3643;
 }
+
 .header-basket::before {
   content: "";
   position: absolute;
