@@ -1,7 +1,45 @@
+var buy_btn = document.querySelectorAll(".product-buy");
+var popup_cart = document.querySelector(".modal-cart");
+var close_cart = popup_cart.querySelector(".modal-close");
+var overlay = document.querySelector(".modal-overlay");
+
+for(var i = 0; i < buy_btn.length; i++){
+  
+  buy_btn[i].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup_cart.classList.add("modal-show");
+  overlay.classList.add("overlay-show");
+});
+}
+
+close_cart.addEventListener("click", function(evt){
+  evt.preventDefault();
+  popup_cart.classList.remove("modal-show");
+  overlay.classList.remove("overlay-show");
+});
+      
+window.addEventListener("keydown", function(evt){
+  if (evt.keyCode === 27) {
+    if (popup_cart.classList.contains("modal-show")){
+      evt.preventDefault();
+      popup_cart.classList.remove("modal-show");
+      overlay.classList.remove("overlay-show");
+    }
+   }
+});
+
+overlay.addEventListener("click", function(){
+  overlay.classList.remove("overlay-show");
+  popup_cart.classList.remove("modal-show");
+  popup_mail.classList.remove("modal-show");
+  popup_map.classList.remove("modal-show");
+});
+
+
 var contact_btn = document.querySelector(".company-contact-btn");
 var popup_mail = document.querySelector(".mail-form");
 var close_mail = popup_mail.querySelector(".modal-close");
-var overlay = document.querySelector(".modal-overlay");
+
   
 var form = popup_mail.querySelector("form");
 var mail_name = popup_mail.querySelector("[name=modal-name]");
@@ -59,33 +97,7 @@ form.addEventListener("submit", function(evt){
       }
     }
 });
-
-var buy_btn = document.querySelector(".product-buy");
-var popup_cart = document.querySelector(".modal-cart");
-var close_cart = popup_cart.querySelector(".modal-close");
-
-buy_btn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup_cart.classList.add("modal-show");
-  overlay.classList.add("overlay-show");
-});
-      
-close_cart.addEventListener("click", function(evt){
-  evt.preventDefault();
-  popup_cart.classList.remove("modal-show");
-  overlay.classList.remove("overlay-show");
-});
-      
-window.addEventListener("keydown", function(evt){
-  if (evt.keyCode === 27) {
-    if (popup_cart.classList.contains("modal-show")){
-      evt.preventDefault();
-      popup_cart.classList.remove("modal-show");
-      overlay.classList.remove("overlay-show");
-    }
-   }
-});
-      
+  
 var map_btn = document.querySelector(".company-contact-map");
 var popup_map = document.querySelector(".modal-map");
 var close_map = popup_map.querySelector(".modal-close"); 
@@ -112,14 +124,6 @@ window.addEventListener("keydown", function(evt){
   }
 });
     
-
-overlay.addEventListener("click", function(){
-  overlay.classList.remove("overlay-show");
-  popup_mail.classList.remove("modal-show");
-  popup_cart.classList.remove("modal-show");
-  popup_map.classList.remove("modal-show");
-  
-});
     
 // Кнопочки в сервисах.
 
@@ -131,37 +135,34 @@ var delivery = document.querySelector(".service-delivery");
 var warrianty = document.querySelector(".service-warrianty");
 var credit = document.querySelector(".service-credit");
 
-btn_delivery.addEventListener("click", function (evt) {
+function clearSelection(evt) {
   evt.preventDefault();
-  delivery.classList.add("service-show");
-  btn_delivery.classList.add("service-btn-active");
-    if (btn_warrianty.classList.contains("service-btn-active") || btn_credit.classList.contains("service-btn-active")){
-        evt.preventDefault();
-        btn_warrianty.classList.remove("service-btn-active")  || btn_credit.classList.remove("service-btn-active");
-        warrianty.classList.remove("service-show") || credit.classList.remove("service-show");
-    }
+  btn_delivery.classList.remove("service-btn-active");
+  btn_warrianty.classList.remove("service-btn-active")
+  btn_credit.classList.remove("service-btn-active");
+  delivery.classList.remove("service-show");
+  warrianty.classList.remove("service-show");
+  credit.classList.remove("service-show");
+}
+
+function makeActive(slide, button) {
+  slide.classList.add("service-show");
+  button.classList.add("service-btn-active");
+}
+
+btn_delivery.addEventListener("click", function (evt) {
+  clearSelection(evt);
+  makeActive(delivery, btn_delivery);
 });
 
 btn_warrianty.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  warrianty.classList.add("service-show");
-  btn_warrianty.classList.add("service-btn-active");
-    if (btn_delivery.classList.contains("service-btn-active") || btn_credit.classList.contains("service-btn-active")){
-        evt.preventDefault();
-        btn_delivery.classList.remove("service-btn-active")  || btn_credit.classList.remove("service-btn-active");
-        delivery.classList.remove("service-show") || credit.classList.remove("service-show");
-    }
+  clearSelection(evt);
+  makeActive(warrianty, btn_warrianty);
 });
 
 btn_credit.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  credit.classList.add("service-show");
-  btn_credit.classList.add("service-btn-active");
-    if (btn_delivery.classList.contains("service-btn-active") || btn_warrianty.classList.contains("service-btn-active")){
-        evt.preventDefault();
-        btn_delivery.classList.remove("service-btn-active")  || btn_warrianty.classList.remove("service-btn-active");
-        delivery.classList.remove("service-show") || warrianty.classList.remove("service-show");
-    }
+  clearSelection(evt);
+  makeActive(credit, btn_credit);
 });
 
 

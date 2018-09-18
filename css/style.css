@@ -2648,7 +2648,7 @@ p.cart-text{
 
 @keyframes show {
   0% {transform: translateX(20px)}
-  70% {transform: translateX(30px);}
+  70% {transform: translateX(30px)}
   90% {transform: translateX(-10px);}
   100% {transform: translateX(0px);}
 }
