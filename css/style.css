@@ -1428,7 +1428,7 @@ h2.header-manufacturers{
 .company-information {
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   width: 525px;
   letter-spacing: 0.14px;
  
@@ -1437,7 +1437,7 @@ p.contacts{
   letter-spacing: 0;
 }
 p.promo{
-  padding-bottom: 21px;
+  margin-bottom: 21px;
   letter-spacing: 0.04px;
 }
 
@@ -1458,7 +1458,7 @@ p.promo{
 .company-title{
   margin: 0;
   padding: 0;
-  padding-bottom: 26px;
+  margin-bottom: 26px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -2371,7 +2371,7 @@ p.perforators-text{
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  padding-top: 30px;
+  margin-top: 30px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
