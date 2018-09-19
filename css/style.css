@@ -2350,12 +2350,14 @@ a.catalog-option-down:active path{
 /* БЛОК "О перфораторах"*/
 .perforators{
   background-color: #f4f8f9;
+  padding-bottom: 69px;
+  padding-top: 35px;
 }
 
 .perforators p{
   margin: 0;
   padding: 0;
-  padding-bottom: 69px;
+  
   letter-spacing: 0.14px;
 }
 
@@ -2369,7 +2371,7 @@ p.perforators-text{
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  padding-top: 65px;
+  padding-top: 30px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
