@@ -1489,7 +1489,7 @@ p.promo{
 /*  ФУТЕР ВЕРХНЯЯ ЧАСТЬ*/
 
 .footer-upper-panel{
-  height: 193px;
+  min-height: 193px;
   background-color: #303f58;
 }
 
