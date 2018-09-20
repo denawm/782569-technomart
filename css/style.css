@@ -1321,17 +1321,17 @@ h2.header-manufacturers{
 
 .service-delivery{
   background: url(../img/delivery.png) no-repeat 152px 25px;
-  width: 640px;
+  width: 630px;
 }
 
 .service-warrianty{
   background: url(../img/warrianty.png) no-repeat 240px 3px;
-  width: 640px;
+  width: 630px;
   
 }
 .service-credit{
   background: url(../img/credit.png) no-repeat 165px 0px;
-  width: 640px;
+  width: 630px;
 }
 
 .service-credit,
@@ -1545,6 +1545,10 @@ p.promo{
  
 }
 
+.footer-top-list li:last-of-type,
+.footer-bottom-list li:last-of-type{
+  margin-right: 0px;
+}
 
 .main-footer-logo {
   display: -webkit-box;
