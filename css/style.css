@@ -1637,7 +1637,7 @@ p.promo{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 107px;
+  min-height: 107px;
 }
 
 .footer-bottom-panel p{
