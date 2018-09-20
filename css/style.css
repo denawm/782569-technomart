@@ -494,6 +494,7 @@ a.logo:active{
   position: relative;
   display: inline-block;
   
+  
   padding: 9px;
   padding-left: 21px;
   padding-right: 0px;
@@ -502,6 +503,7 @@ a.logo:active{
   font-size: 21px;
   line-height: 21px;
   letter-spacing: 0.09px;
+  vertical-align: top;
   
   color: #ee3643;
   border: 3px solid #ffffff;
@@ -1202,7 +1204,7 @@ h2.header-manufacturers{
 /*  БЛОК СЕРВИСЫ  */
 
 .service{
-  height: 522px;
+  min-height: 522px;
   margin-bottom: 79px;
     
   background-color: #f4f8f9;
@@ -1316,7 +1318,7 @@ h2.header-manufacturers{
 }
 
 .service-details div{
-  min-height: 260px;
+  min-height: 253px;
 }
 
 .service-delivery{
@@ -2704,8 +2706,6 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
 
 a,
 ::before,
