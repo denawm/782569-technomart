@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 960px;
+  min-width: 1160px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -44,7 +44,9 @@ img {
   
   background-color:  #ee3643;
   -webkit-box-shadow: 0 5px 0  #b52933;
-          box-shadow: 0 5px 0  #b52933
+          box-shadow: 0 5px 0  #b52933;
+            
+  cursor: default;          
 }
 
 .main-header {
@@ -1293,7 +1295,7 @@ h2.header-manufacturers{
 .service-columns button:active{
   color: #32425c;
   background-color: #ffffff;
-  border: none;
+  
 }
 
 .service-columns .service-btn-active{
@@ -1567,8 +1569,8 @@ p.promo{
   
   background-color:  #ee3643;
   -webkit-box-shadow: 0 5px 0  #b52933;
-          box-shadow: 0 5px 0  #b52933
-    
+          box-shadow: 0 5px 0  #b52933;
+  cursor: default;
 }
 
 .footer-upper-panel p{
