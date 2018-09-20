@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1160px;
+  min-width: 960px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -2524,6 +2524,7 @@ p.perforators-text{
 .textarea{
   resize: none;
   width: 460px;
+  
 }
 
 .modal p{
@@ -2674,6 +2675,10 @@ p.cart-text{
   100% {transform: translateX(0px);}
 }
 
+.map-js{
+  border: none;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -2693,6 +2698,7 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 
 div,
 a,
